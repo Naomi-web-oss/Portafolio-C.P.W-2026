@@ -1,17 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta
+      name="descripcion"
+      content="sitio registro para el curso de codificación de páginas web"
+    />
+    <meta
+      name="keywords"
+      content="HTML , CSS , Javascript , codificación de páginas web"
+    />
+    <meta name="author" content="Naomi-Cantillo" />
+    <title>Formulario / Registro</title>
 </head>
 <body>
+<header>
+    <!--Header: Cabecera de la pàgina y generalmente se repite en todo el sitio-->
+    <h1>Condificaciòn de pàginas web</h1> 
+    <p>Sitio de demostraciòn del mòdulo</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulo.html">Artìculo</a></li>
+        <li><a href="horario.html">Horario</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav><br><hr>
+</header>
 
+<main><br>
+    <h2>Formulario de matricula</h2><br>
+    <form action="#" method="post">
+        <!--Form es el contenedor del formulario--><!--El action es donde se envìan los datos--><!--El method es donde se envìan los datos-->
+      <legend>Formulario de registro</legend>
+        
+    <p>
+      <label for="Nombre">Nombre:</label>
+      <input type="text" id="Nombre" name="Nombre" required><br><br>
+    </p>
+    
+    <p>
+    <label for="Correo">Correo electrónico:</label>
+    <input type="email" id="Correo" name="Correo" required><br><br>
+    </p>
+    
 
+    <button type="submit">Enviar</button>
 
+    </fieldset>
+    </form><br><br><hr><br>
+
+<fieldset>
+    <legend>Detalles de matricula</legend>
+    
+    <p>
+        <label for="telefono">Telèfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+    </p>
+
+    <p>
+        <label for="Fecha">Fecha de inicio:</label>
+        <input type="date" id="Fecha" name="Fecha" required>
+    </p>
+
+    <p>
+        <label for="Edad">Edad:</label>
+        <input type="number" id="Edad" name="Edad" required>
+    </p>
+
+</fieldset>
+
+    <legend>Modalidad</legend>
+    <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+    <label for="presencial">Presencial</label><br>  
+
+     <input type="radio" id="virtual" name="modalidad" value="virtual" required>
+    <label for="virtual">virtual</label><br> 
+
+    <input type="radio" id="mixta" name="modalidad" value="mixta" required>
+    <label for="mixta">Mixta</label><br>
+    
+<p>
+    <label for="Horario">Horario preferido</label>
+    <select id="Horario" name="Horario" required>
+        <option value="">Seleccione un horario</option>
+        <option value="mañana">Mañana</option>
+        <option value="tarde">Tarde</option>
+        <option value="noche">Noche</option>
+    </select>
+</p>
+<p><label for="Comentarios">Comentarios:</label>
+    <textarea id="Comentarios" name="Comentarios" rows="4" cols="50"></textarea><br><br>
+
+</p>
+</fieldset>
+</main>
+<br>
+</body>
     
    <footer>
     Copy right © 2026 INA Naomi Cantillo - Todos los derechos reservados
   </footer> 
-</body>
+
 </html>
