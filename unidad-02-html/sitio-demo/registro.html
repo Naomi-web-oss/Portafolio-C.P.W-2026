@@ -32,7 +32,7 @@
 <main><br>
     <h2>Formulario de matricula</h2><br>
     <form action="#" method="post">
-        <!--Form es el contenedor del formulario--><!--El action es donde se envìan los datos--><!--El method es donde se envìan los datos-->
+        <!--FORM: contenedor del formulario--><!--El action es donde se envìan el formulario--><!--El method es el mètodo de envio--> <!--post: envio de datos por el cuerpo de la solicitud -->
       <legend>Formulario de registro</legend>
         
     <p>
@@ -56,17 +56,17 @@
     
     <p>
         <label for="telefono">Telèfono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}"><br><br>
     </p>
 
     <p>
         <label for="Fecha">Fecha de inicio:</label>
-        <input type="date" id="Fecha" name="Fecha" required>
+        <input type="date" id="Fecha" name="Fecha" required title="Seleccione una fecha de inicio"><br><br>
     </p>
 
     <p>
         <label for="Edad">Edad:</label>
-        <input type="number" id="Edad" name="Edad" required>
+        <input type="number" id="Edad" name="Edad" required min="18" max="80" step="1" title="Ingrese su edad (18-80)"><br><br>
     </p>
 
 </fieldset>
