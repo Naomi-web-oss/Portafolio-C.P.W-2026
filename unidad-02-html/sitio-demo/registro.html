@@ -3,87 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulario de registro del sitio-demo">
-    <meta name="keywords" content="registro, formulario, sitio-demo">
-    <meta name="author" content="Gio-Coto">
-    <title>Formulario | Registro</title>
+    <meta
+      name="descripcion"
+      content="sitio registro para el curso de codificación de páginas web"
+    />
+    <meta
+      name="keywords"
+      content="HTML , CSS , Javascript , codificación de páginas web"
+    />
+    <meta name="author" content="Naomi-Cantillo" />
+    <title>Formulario / Registro</title>
 </head>
 <body>
-    <header>
-      <!--Header: Cabecera de la página y generalmente se repite en todo el sitio-->
-      <h1>Codificación de Páginas Web</h1>
-      <p>Sitio de demostración del módulo</p>
+<header>
+    <!--Header: Cabecera de la pàgina y generalmente se repite en todo el sitio-->
+    <h1>Condificaciòn de pàginas web</h1> 
+    <p>Sitio de demostraciòn del mòdulo</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="articulo.html">Artìculo</a></li>
+        <li><a href="horario.html">Horario</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav><br><hr>
+</header>
 
-      <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="articulo.html">Artículos</a></li>
-          <li><a href="horarios.html">Horario</a></li>
-          <li><a href="registro.html">Registro</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-        <h2>Formulario de matrícula</h2>
-        <form action="#" method="post">
-            <!--FORM: contenedor del formulario. action: es donde se envía el formulario method: es el método de envío. post: envío de datos por el cuerpo de la solicitud-->
-            <fieldset> <!-- Contenedor de los elementos del formulario -->
-                <legend>Información personal</legend><!--Legend: título del fieldset-->
-            <p>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
-            </p>
-
-            <p>
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required><br><br>
-            </p>
-            <button type="submit">Enviar matrícula</button>
-            </fieldset>
-        </form>
-        <fieldset>
-            <legend>Detalles de Matrícula</legend>
-            <p>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono"><br><br>
-            </p>
-
-            <p>
-                <label for="fecha">Fecha de inicio:</label>
-                <input type="date" id="fecha" name="fecha"><br><br>
-            </p>
-
-            <p>
-                <label for="edad">Edad:</label>
-                <input type="number" id="edad" name="edad"><br><br>
-            </p>
-        </fieldset>
+<main><br>
+    <h2>Formulario de matricula</h2><br>
+    <form action="#" method="post">
+        <!--FORM: contenedor del formulario--><!--El action es donde se envìan el formulario--><!--El method es el mètodo de envio--> <!--post: envio de datos por el cuerpo de la solicitud -->
+      <legend>Formulario de registro</legend>
         
-        <fieldset>
-            <legend>Modalidad</legend>
-            <input type="radio" id="presencial" name="modalidad" value="presencial">
-            <label for="presencial">Presencial</label><br>
-            <input type="radio" id="virtual" name="modalidad" value="virtual">
-            <label for="virtual">Virtual</label><br>
-            <input type="radio" id="mixta" name="modalidad" value="mixta">
-            <label for="mixta">Mixta</label><br><br>
-        </fieldset>
-        <p>
-            <label for="horario">Horario preferido</label><br>
-            <select id="horario" name="horario">
-                <option value="mañana">Mañana</option>
-                <option value="tarde">Tarde</option>
-                <option value="noche">Noche</option>
+    <p>
+      <label for="Nombre">Nombre:</label>
+      <input type="text" id="Nombre" name="Nombre" required><br><br>
+    </p>
+    
+    <p>
+    <label for="Correo">Correo electrónico:</label>
+    <input type="email" id="Correo" name="Correo" required><br><br>
+    </p>
+    
 
-        </p>
-    </main>
-    <footer>
-      <!--Footer: Pie, créditos, contacto, derechos-->
-      <p>
-        © 2026 INA. Programa Desarrollo de Páginas Web. Todos los derechos
-        reservados
-      </p>
-    </footer>
+    <button type="submit">Enviar</button>
+
+    </fieldset>
+    </form><br><br><hr><br>
+
+<fieldset>
+    <legend>Detalles de matricula</legend>
+    
+    <p>
+        <label for="telefono">Telèfono:</label>
+        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}"><br><br>
+    </p>
+
+    <p>
+        <label for="Fecha">Fecha de inicio:</label>
+        <input type="date" id="Fecha" name="Fecha" required title="Seleccione una fecha de inicio"><br><br>
+    </p>
+
+    <p>
+        <label for="Edad">Edad:</label>
+        <input type="number" id="Edad" name="Edad" required min="18" max="80" step="1" title="Ingrese su edad (18-80)"><br><br>
+    </p>
+
+</fieldset><br><hr><br>
+
+    <legend>Modalidad</legend>
+    <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+    <label for="presencial">Presencial</label><br>  
+
+     <input type="radio" id="virtual" name="modalidad" value="virtual" required>
+    <label for="virtual">virtual</label><br> 
+
+    <input type="radio" id="mixta" name="modalidad" value="mixta" required>
+    <label for="mixta">Mixta</label><br>
+    
+<p>
+    <label for="Horario">Horario preferido</label>
+    <select id="Horario" name="Horario" required>
+        <option value="">Seleccione un horario</option>
+        <option value="mañana">Mañana</option>
+        <option value="tarde">Tarde</option>
+        <option value="noche">Noche</option>
+    </select>
+</p>
+<p><label for="Comentarios">Comentarios:</label>
+    <textarea id="Comentarios" name="Comentarios" rows="4" cols="50" maxlength="200" title="Máximo 200 caracteres"></textarea><br><br>
+
+</p>
+</fieldset>
+</main>
+<br>
 </body>
-</html>
+    
+   <footer>
+    Copy right © 2026 INA Naomi Cantillo - Todos los derechos reservados
+  </footer> 
