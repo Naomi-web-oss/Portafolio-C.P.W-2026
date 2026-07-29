@@ -29,17 +29,28 @@
       </ul>
     </nav>
   </header>
-  <main><h1>Galería</h1></main>
+  <main id="contenido">
+    <article>
+    <h1>Galería</h1>
+
   <!--Imagen y sus atributos-->
   <img src="recursos/Lab01.jpg" alt="Imagen de la galería de un laboratorio de informática" width="600" height="400" />
-  <!--FIGURE: AGRUPA UN CONTENIDO CON UNA EXPLICACIÓN-->
+  <!--FIGURE: AGRUPA UN CONTENIDO CON UN Pie-->
 <figcaption>
   <img src="recursos/lab02.jpg" alt=Imagen de la galería de un laboratorio de informática" width="600" height="400" />
 
 <figcaption>Imagen de la galería de un laboratorio de informática</figcaption>
 </figure>
-</figcaption>
-
+<!--VARIOS FORMATOS: el navegador elige uno-->
+<figure>
+    <picture>
+        <source srcset="recursos/lab01.jpg" type="imagen/webp">
+        <source srcset="recursos/lab02.jpg" type="imagen/jpeg">
+        <img src="recursos/lab01.jpg" alt="Imagen de la galería de un laboratorio de informática" width="800" height="500">
+    </picture>
+</figure>
+</article>
+  </main>
 
 </body>
 <footer>
