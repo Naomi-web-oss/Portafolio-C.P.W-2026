@@ -26,6 +26,7 @@
         <li><a href="articulo.html">Artículo</a></li>
         <li><a href="horario.html">Horario</a></li>
         <li><a href="registro.html">Registro</a></li>
+        <li><a href="galería.html">Galería</a></li>
       </ul>
     </nav>
   </header>
@@ -34,21 +35,45 @@
     <h1>Galería</h1>
 
   <!--Imagen y sus atributos-->
-  <img src="recursos/Lab01.jpg" alt="Imagen de la galería de un laboratorio de informática" width="600" height="400" />
+  <img src="recursos/s07-Lab01.jpg" alt="Imagen de la galería de un laboratorio de informática" width="600" height="400" />
   <!--FIGURE: AGRUPA UN CONTENIDO CON UN Pie-->
 <figcaption>
-  <img src="recursos/lab02.jpg" alt=Imagen de la galería de un laboratorio de informática" width="600" height="400" />
+  <img src="recursos/lab02.jpg" alt="Imagen de la galería de un laboratorio de informática" width="600" height="400" />
 
 <figcaption>Imagen de la galería de un laboratorio de informática</figcaption>
 </figure>
 <!--VARIOS FORMATOS: el navegador elige uno-->
 <figure>
     <picture>
-        <source srcset="recursos/lab01.jpg" type="imagen/webp">
+        <source srcset="recursos/lab01" type="imagen/webp">
         <source srcset="recursos/lab02.jpg" type="imagen/jpeg">
         <img src="recursos/lab01.jpg" alt="Imagen de la galería de un laboratorio de informática" width="800" height="500">
     </picture>
 </figure>
+
+<!--AUDIO-->
+<section id="audio">
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="recursos/En of Line.mp3" type="audio/mpeg">
+        <source src="recursos/audio.ogg" type="audio/ogg">
+    
+         <p>Tu navegador no soporta el elemento audio.</p>
+         <a href="recursos/En or Line">controls="Descargar audio"></a>
+    </audio>
+
+    <!--VIDEO-->
+
+    <h3>Mini tutorial Capcut</h3>
+    <video controls width="800" height="500" poster="recursos/descarga (1).webp" preload="metadata">
+        <source src="recursos/video2.mp4.mp4" type="video/mp4">
+        <source src="recursos/video2.mp4.webm" type="video/webm">
+        <track src="recursos/video2.vtt" kind="subtitles" srclang="es" label="Español" default/>
+         <p>Tu navegador no soporta el elemento audio.</p>
+         <a href="recursos/video2.mp4.mp4">controls="Descargar audio"></a>
+    </video>
+
+</section>
 </article>
   </main>
 
