@@ -48,22 +48,22 @@ Portafolio-Codificación de Páginas Web/
 
 ### Unidad 1 · Implementación de control de versiones
 
-| Sesión | Tema         | Qué aprendí                            |      Trabajo      |     Captura      |
-| :----: | :----------- | :------------------------------------- | :---------------: | :--------------: |
-|  S01   | Git y GitHub |Aprendí sobre Configuración Git y Github| [ver](unidad-01/Temporal.tmp) | [ver](recursos/Evidencia%20configuración%20Github.png) |
+| Sesión | Tema         | Qué aprendí                              |            Trabajo            |                        Captura                         |
+| :----: | :----------- | :--------------------------------------- | :---------------------------: | :----------------------------------------------------: |
+|  S01   | Git y GitHub | Aprendí sobre Configuración Git y Github | [ver](unidad-01/Temporal.tmp) | [ver](recursos/Evidencia%20configuración%20Github.png) |
 
 <details>
 <summary><b>Unidad 2 · Etiquetas y atributos HTML</b> (sesiones 2 a 8)</summary>
 
-| Sesión | Tema                           | Qué aprendí                                          |      Trabajo      |     Captura      |
-| :----: | :----------------------------- | :--------------------------------------------------- | :---------------: | :--------------: |
-|  S02   | Git colaborativo, la web y XML | Aprendí sobre comandos git para trabajo colaborativo | [ver](unidad-02/) | [ver](recursos/Evidencia%20trabajocolaborativo%20Github.png) |
-|  S03   | Estructura del documento HTML5 | Aprendí sobre HTML5, favicon y validación W3C        | [ver](unidad-02/sitio demo/index.html) | [ver](recursos/Evidencia%20Favicon%20.png) |
-|  S04   | Texto, enlaces y anclas        | Aprendí sobre texto semático,tipos de enlaces, anclas| [ver](unidad-02/sitio demo/articulo.html) | [ver](recursos/articulo.html-index.html/|
-|  S05   | Listas y tablas                |                                                      | [ver](unidad-02/) | [ver](recursos/) |
-|  S06   | Formularios y semántica        |                                                      | [ver](unidad-02/) | [ver](recursos/) |
-|  S07   | Multimedia                     |                                                      | [ver](unidad-02/) | [ver](recursos/) |
-|  S08   | SVG y repaso                   |                                                      | [ver](unidad-02/) | [ver](recursos/) |
+| Sesión | Tema                           | Qué aprendí                                                                                               |                  Trabajo                  |                           Captura                            |
+| :----: | :----------------------------- | :-------------------------------------------------------------------------------------------------------- | :---------------------------------------: | :----------------------------------------------------------: |
+|  S02   | Git colaborativo, la web y XML | Aprendí sobre comandos git para trabajo colaborativo                                                      |             [ver](unidad-02/)             | [ver](recursos/Evidencia%20trabajocolaborativo%20Github.png) |
+|  S03   | Estructura del documento HTML5 | Aprendí sobre HTML5, favicon y validación W3C                                                             |  [ver](unidad-02/sitio demo/index.html)   |          [ver](recursos/Evidencia%20Favicon%20.png)          |
+|  S04   | Texto, enlaces y anclas        | Aprendí sobre texto semático,tipos de enlaces, anclas                                                     | [ver](unidad-02/sitio demo/articulo.html) |           [ver](recursos/articulo.html-index.html/           |
+|  S05   | Listas y tablas                | Aprendì a trabajar los tres tipos de vista con sus tipos y estilos, tambièn la parte de tablas semànticas | [ver](unidad-02/sitio-demo/horario.html)  |            [ver](recursos/Listas-Sesion%2005.png)            |
+|  S06   | Formularios y semántica        | Aprendì etiquetas semàticas y formularios con validaciòn local                                                                                                          |             [ver](unidad-02/sitio demo/registro.html)             |                       [ver](recursos/captura%20evidencia%20S06%20formularios%20y%20semàntica.png)                       |
+|  S07   | Multimedia                     |                                                                                                           |             [ver](unidad-02/)             |                       [ver](recursos/)                       |
+|  S08   | SVG y repaso                   |                                                                                                           |             [ver](unidad-02/)             |                       [ver](recursos/)                       |
 
 </details>
 
@@ -163,7 +163,7 @@ imágenes representativas de todo el módulo.)_
 <p align="center">
   <img src="recursos/ejemplo-escritorio.png" width="600" alt="Sitio personal en vista de escritorio">
 </p>
-
+ 
 <div align="center"><i>El sitio personal al cierre de la Unidad 3.</i></div>
 
 ### El mismo sitio en dos anchos
