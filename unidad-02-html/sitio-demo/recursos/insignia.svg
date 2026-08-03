@@ -1,14 +1,12 @@
-<svg width="300" heght="350" viewBox="0 0 300 300" xmnls="http://www.w3.org/2000/svg">
+<svg width="300" height="350" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
                
                 <circle cx="100" cy="100" r="90" fill="#126709" stroke="#00F487" stroke-width="4"></circle>
 
                 <circle cx="100" cy="100" r="72" fill="#f9f9f9" stroke="#00F487" stroke-width="4"></circle>
 
 <!--Polygon: Lista de vértices ; La figura de cierre sola -->
-
-                <polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80" fill="#876544" stroke="#1F4E79" width="2"></polygon>
+<polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80" fill="#876544" stroke="#1F4E79" stroke-width="2"></polygon>
 
  <!--Text:Código para crear texto SVG-->
-
-               <text x="80" y="145" text-anchor="mindle" font-size="14px" fill="#1f4E79">HTML </text>  
+ <text x="100" y="145" text-anchor="middle" font-size="14px" fill="#1f4E79">HTML </text>  
             </svg>

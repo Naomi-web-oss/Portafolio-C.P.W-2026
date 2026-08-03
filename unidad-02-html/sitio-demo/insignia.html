@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Naomi Cantillo">
@@ -33,7 +31,7 @@
         <!-- SVG: se dibuja en codigo, sesión 08-->
          <section id="insignia">
             <h3>Insignia de modulo</h3>
-            <svg width="300" heght="350" viewbox="0 0 300 300" xmnls="http://www.w3.org/2000/svg">
+            <svg width="300" height="350" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
                
                 <circle cx="100" cy="100" r="90"
                 fill="#126709"
@@ -46,22 +44,17 @@
                 stroke-width="4"/>
 
 <!--Polygon: Lista de vértices ; La figura de cierre sola -->
-
-                <polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80"
-                    fill="#876544"
-                    stroke="#1F4E79"
-                    stroke width="2"/>
+<polygon points="100,45 112,80 149,80 119,102 130,137 100,115 70,137 81,102 51,80 88,80" fill="#876544" stroke="#1F4E79" stroke-width="2"/>
 
  <!--Text:Código para crear texto SVG-->
-
-               <text x="80" y="145" text-anchor="mindle" font-size="14px" fill="#1f4E79">HTML </text>  
+ <text x="100" y="145" text-anchor="middle" font-size="14px" fill="#1f4E79">HTML </text>  
             </svg>
             <p>La insignia esta dibujada con código, no es fotografía por eso conserva su nitidez en cualquier tamaño</p>
           </section>
         <!--SvG como archivo externo-->
         <section id="externo">
             <h3>La misma insignia como archivo</h3>
-            <a href="recursos/insignia.svg" alt="Insignia de modulo con una estrella sobre un circulo" width="100" heigth="100"></a>
+            <img src="recursos/insignia.svg" alt="Insignia de modulo con una estrella sobre un circulo" width="100" height="100">
 
             <p>Aquí la insignia se enlaza desde un archivo <code>.svg</code>
             aparte. se ve igual de nitida aunque mida la mitad, porque al ser vectorial y no pixeles no pierde calidad</p>
