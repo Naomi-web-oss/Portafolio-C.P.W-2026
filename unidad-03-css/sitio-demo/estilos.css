@@ -1,9 +1,18 @@
 /* estilos.css*/
+/*reset bàsico*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*esta regla elimina los margenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento.*/
+
 body{
-    
+
     font-family: Arial, sans-serif;
-    color:#2222;
-    background-color: #222222;
+    color: #4630a8;
+    background-color: #ffff;
     /* color de fondo de la pàgina*/
 
 }
@@ -14,4 +23,6 @@ h1{
     text-align:center;
     
 }
+
+
 
