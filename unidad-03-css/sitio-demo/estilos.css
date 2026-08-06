@@ -1,7 +1,17 @@
 /* estilos.css*/
 body{
+    
     font-family: Arial, sans-serif;
+    color:#2222;
     background-color: #222222;
     /* color de fondo de la pàgina*/
 
 }
+
+h1{
+    color: #1F4E79;
+    font-size:32px;
+    text-align:center;
+    
+}
+
