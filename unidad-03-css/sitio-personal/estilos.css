@@ -32,10 +32,10 @@ h1{
 
 }
 
-nav a{
+nav a {
     color: black;
     margin-right: 15px;
-    transition: color 0.3;
+    transition: color 0.3s;
 
 }
 
@@ -63,3 +63,4 @@ body{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
+
