@@ -25,3 +25,17 @@ h1{
     padding: 10px;
 }
 
+/*id + combinado*/
+#Inicio{
+    background-color: aqua;
+    padding: 10px;
+
+}
+
+nav a{
+    color: black;
+    margin-right: 15px;
+    transition: color 0.3;
+
+}
+
