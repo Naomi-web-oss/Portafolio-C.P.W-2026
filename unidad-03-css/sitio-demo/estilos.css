@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 /*estilos.css*/
-=======
-/* estilos.css*/
->>>>>>> 248bbcd990e8cff6ff475e1f96cbc82c0cd9ae1e
+
 /*reset bàsico*/
 *{
 margin: 0;
@@ -15,11 +13,9 @@ box-sizing: border-box;
 body{
 
     font-family: Arial, sans-serif;
-<<<<<<< HEAD
-    color: #4639a8;
-=======
+
     color: #4630a8;
->>>>>>> 248bbcd990e8cff6ff475e1f96cbc82c0cd9ae1e
+
     background-color: #ffff;
     /* color de fondo de la pàgina*/
 
@@ -32,9 +28,51 @@ h1{
     
 }
 
+/*aplicar estilos a clases*/
+.destacado{
+    background-color: #e9e8ef;
+    padding: 10 15 10 15px; /*aplica con las manillas del reloj: arriba - derecha - abajo - izquierda*/
+}
+
+/*Aplicar estilos a identificadores o IDs*/
+#Inicio {
+    background-color: #1a5b98;
+    padding: 30px;
+}
+
+/*estilos solo a enlaces dentro del nav*/
+nav a {
+    color:#e9e8ef;
+    margin-right: 15px;
+    transition: color 0.3s; /*cambio suave al pasar el mouse*/
+}
+
+nav a:hover {
+    color: #f8cbad; /*al pasar el cursor*/
+
+}
+
+tbody tr:nth-child(even){
+    background-color: #e0d8d8;
+}
+
+/*Pseudo-elemento ::first-letter y ::selection*/
+article p::first-letter {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+::selection {
+    background-color: #1f4e79;
+   color: white;
+}
+
+/*Agregar familia de fuentes traida de google fonts*/
+body{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    
+}
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 248bbcd990e8cff6ff475e1f96cbc82c0cd9ae1e
