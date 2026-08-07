@@ -52,3 +52,9 @@ tbody tr:nth-child(even){
     background-color: #4048d8;
 }
 
+/*pseudo elemento*/
+article p::first-letter {
+     font-size: 35px;
+     font-weight: bold;
+
+}
