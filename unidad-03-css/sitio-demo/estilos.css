@@ -31,7 +31,7 @@ h1{
 /*aplicar estilos a clases*/
 .destacado{
     background-color: #e9e8ef;
-    padding: 10 15 10 15px; /*aplica con las manillas del reloj: arriba - derecha - abajo - izquierda*/
+    padding: 10px; /*aplica con las manillas del reloj: arriba - derecha - abajo - izquierda*/
 }
 
 /*Aplicar estilos a identificadores o IDs*/
