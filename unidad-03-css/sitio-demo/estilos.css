@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*estilos.css*/
+=======
+/* estilos.css*/
+>>>>>>> 248bbcd990e8cff6ff475e1f96cbc82c0cd9ae1e
 /*reset bàsico*/
 *{
 margin: 0;
@@ -11,7 +15,11 @@ box-sizing: border-box;
 body{
 
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     color: #4639a8;
+=======
+    color: #4630a8;
+>>>>>>> 248bbcd990e8cff6ff475e1f96cbc82c0cd9ae1e
     background-color: #ffff;
     /* color de fondo de la pàgina*/
 
@@ -26,4 +34,7 @@ h1{
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 248bbcd990e8cff6ff475e1f96cbc82c0cd9ae1e
