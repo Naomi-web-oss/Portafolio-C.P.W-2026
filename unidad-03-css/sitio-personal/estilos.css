@@ -39,6 +39,16 @@ nav a{
 
 }
 
+/*:hover*/
+
 nav a:hover{
     color: rgb(0, 179, 255);
 }
+
+
+/*:nth-child*/
+
+tbody tr:nth-child(even){
+    background-color: #4048d8;
+}
+
