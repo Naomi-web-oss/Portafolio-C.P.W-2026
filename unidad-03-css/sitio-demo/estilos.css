@@ -11,11 +11,10 @@ box-sizing: border-box;
 /*esta regla elimina los margenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento.*/
 
 body{
-
+    font-size: large;
     font-family: Arial, sans-serif;
-
+    line-height: 25.6px;
     color: #4630a8;
-
     background-color: #ffff;
     /* color de fondo de la pàgina*/
 
