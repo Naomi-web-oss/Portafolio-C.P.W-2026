@@ -69,6 +69,8 @@ article p::first-letter {
 body{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #fcfcfc
     
 }
 
@@ -110,4 +112,15 @@ main a{
   border-bottom : 1px solid #1f4e79;  
 }
 
+header{
+    background-color: #1f4e79;
+    color: #f8cbad;
+}
+
+footer{
+    text-decoration: none;
+    background-color: #0a266d;
+    color: white;
+    margin-top: 32px;
+}
 
