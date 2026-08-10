@@ -12,17 +12,23 @@ box-sizing: border-box;
 
 body{
     font-size: large;
-    font-family: Arial, sans-serif;
     line-height: 25.6px;
-    color: #4630a8;
     background-color: #ffff;
     /* color de fondo de la pàgina*/
 
+/*Agregar familia de fuentes traida de google fonts*/
+
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    
 }
 
 h1{
     color: #1F4E79;
     text-align:center;
+    font-size: 2.5rem;
+    font-weight: 400;
     
 }
 
@@ -34,10 +40,7 @@ h1{
 
 /*Aplicar estilos a identificadores o IDs*/
 #Inicio {
-    background-image: url(../recursos/fondo1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #1f4e79;
     padding: 30px;
 }
 
@@ -68,20 +71,7 @@ article p::first-letter {
    color: white;
 }
 
-/*Agregar familia de fuentes traida de google fonts*/
-body{
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #fcfcfc
-    
-}
 
-h1{
-    font-size: 2.5rem;
-    font-weight: 400;
-    
-}
 h2 h3{
     font-size: 2rem;
     font-weight: 700;
@@ -112,7 +102,10 @@ main a{
 }
 
 header{
-    background-color: #1f4e79;
+    background-image: url(../recursos/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #f8cbad;
 }
 
