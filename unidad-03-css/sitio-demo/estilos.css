@@ -34,7 +34,10 @@ h1{
 
 /*Aplicar estilos a identificadores o IDs*/
 #Inicio {
-    background-color: #1a5b98;
+    background-image: url(../recursos/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 30px;
 }
 
@@ -79,15 +82,11 @@ h1{
     font-weight: 400;
     
 }
-h2{
+h2 h3{
     font-size: 2rem;
     font-weight: 700;
 }
 
-h3{
-    font-size: 1.5rem;
-    font-weight: 600;
-}
 
 p{
     font-size: 1rem;
@@ -119,7 +118,7 @@ header{
 
 footer{
     text-decoration: none;
-    background-color: #0a266d;
+    background-color: #1a5b98;
     color: white;
     margin-top: 32px;
 }
@@ -129,3 +128,4 @@ footer{
     padding: 24px;
     border-radius: 8px;
 }
+
