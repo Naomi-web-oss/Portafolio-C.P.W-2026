@@ -22,7 +22,6 @@ body{
 
 h1{
     color: #1F4E79;
-    font-size:32px;
     text-align:center;
     
 }
@@ -71,6 +70,44 @@ body{
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     line-height: 1.6;
     
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    
+}
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main p{
+    max-width: 70ch;
+    /*CH: Es el ancho del caracter,"0" es la fuente en uso, tambièn el valor 70, marca el rango de lectura llamada còmoda por lineao renglòn, màs larga, la vista se pierde de lìnea*/
+}
+
+/*Transformaciòn y espacio*/
+header nav a{
+    text-transform: uppercase;
+    Letter-spacing: 1px;
+    font-size: 0.9px;
+    text-decoration: none;
+}
+
+main a{
+  text-decoration:none; 
+  border-bottom : 1px solid #1f4e79;  
 }
 
 
