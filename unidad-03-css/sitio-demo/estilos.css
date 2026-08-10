@@ -124,3 +124,8 @@ footer{
     margin-top: 32px;
 }
 
+.portada-texto{
+    background-color: rgba(2, 2, 2, 1);
+    padding: 24px;
+    border-radius: 8px;
+}
