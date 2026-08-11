@@ -23,7 +23,7 @@ h1{
 
 header nav ul{
     list-style-type: none;
-    /*Quita las viñetas y el con
+    /*Quita las viñetas*/
 }
 
 /*Aplicar estilizar a Clase*/
@@ -220,6 +220,26 @@ tfoot{
 
 header nav li{
     display: inline-block;
-    display: none;
     /*coloca las opciones de menù en linea, al lado del otro*/
 }
+
+ header nav li{
+    display:inline-block
+ }
+
+
+ nav li{
+    margin-left: 15 px;
+ }
+
+
+/*Los 5 valores de position 
+Static: valor por visiòn.
+Relative: Desplaza de su propia posiciòn, conserva su propia posiciòn
+y los elementos seguidos, no se mueven.
+Absolute: Se ubica respecto al ancestro ubicado màs cercano (Sea padre,abuelo)
+Pixel: Se unica respecto a la ventana, no se mueve al desplazarse.
+Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
+
+
+/*Patròn para este caso*/

@@ -20,8 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="css/estilos.css">
 </head>
-<div class="contenedor">
+
 <body>
+  <div class="contenedor">
     <header id="inicio">
     <h1>Codificación de páginas web</h1>
     <p>Sitio de demostración del módulo <abbr title="Código del módulo">CSTI12002</abbr>.</p>
@@ -49,12 +50,13 @@
 <figcaption>Imagen de la galería de un laboratorio de informática</figcaption>
 </figure>
 <!--VARIOS FORMATOS: el navegador elige uno-->
-<figure>
+<figure class="figura-destacada">
     <picture>
         <source srcset="recursos/s07-Lab01.jpg.webp" type="imagen/webp">
         <source srcset="recursos/S07-Lab02.webp" type="imagen/jpeg">
         <img src="recursos/s07-Lab01.jpg.webp" alt="Imagen de la galería de un laboratorio de informática" width="800" height="500">
     </picture>
+    <span class="etiqueta">figura-destacada</span>
 </figure>
 
 <!--AUDIO-->
@@ -83,8 +85,9 @@
 </article>
   </main>
 
-</body>
 </div>
+
+</body>
 <footer>
     <h2>Contacto</h2>
     <address>
