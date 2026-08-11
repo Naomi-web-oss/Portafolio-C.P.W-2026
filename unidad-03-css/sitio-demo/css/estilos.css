@@ -1,0 +1,218 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:large;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#4048d8;
+    line-height:25.6px;
+    background-color:#f2f5ece3
+
+}
+
+h1{
+    color: white;   
+    font-size:2.5rem;
+    font-weight: 400;
+    text-align:center;
+}
+
+header nav ul{
+    list-style-type: none;
+    /*Quita las viñetas y el con
+}
+
+/*Aplicar estilizar a Clase*/
+
+.descatado{
+    background-color: rgb(9, 175, 94);
+    padding: 10px;
+}
+
+
+/*id + combinado*/
+#Inicio{
+    background-color:#0c1683
+
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s;
+
+
+}
+
+/*:hover*/
+
+nav a:hover{
+    color: rgb(0, 179, 255);
+}
+
+
+/*:nth-child*/
+
+tbody tr:nth-child(even){
+    background-color: #4048d8;
+}
+
+/*pseudo elemento*/
+article p::first-letter {
+     font-size: 35px;
+     font-weight: bold;
+
+}
+
+h2 h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+p{
+   font-size: 1rem;
+   font-weight: 400;
+   margin-bottom: 16px;
+}
+
+main p{
+    max-width: 70ch;
+    margin-bottom: 16px
+
+}
+
+header nav{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+header nav a{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 15px;
+
+}
+
+.contenedor{
+    margin:1000px;
+    margin: 0 auto;
+    /*En el margin 0 auto el 0 aplica a la parte vertical y horizontal, el auto reparte el espacio sobrante por igual en ambos lados,lo centra en un elemento con ancho*/
+}
+
+
+main a{
+    text-decoration: none;
+    border-bottom: 1px solid #3b42c7;
+}
+
+header{
+    background-image: url(../recursos/fondo1.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(14, 14, 14);
+    text-align: center;
+}
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+footer{
+    text-decoration: none;
+    background-color: #0c1683;
+    color: white;
+    margin-top: 32px;
+}
+
+.portada.texto{
+    background-color: rgba(2, 2, 2, 0.8);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+aside{
+    padding: 10px 20px;
+    /*El padding aplica a los cuatro lados a la vez*/
+    border: 2px solid #c55a11;
+    border-radius: 8px;
+
+}
+
+/*En este caso el padding aplica a los 4 lados a la vez padding: 10 px 20 px aplica vertical y horizontal. padding: 10 px 20 px 15 px 5 px aplica los 4 llados valores distintos. En el sentido de las manillas del reloj.*/
+
+/*Aplicar lado por lado
+padding-top: 10px; aplica arriba
+padding-right: 10px; aplica a la derecha
+padding-bottom: 10px; aplica abajo
+padding-left: 10px; aplica a la izquierda*/
+
+/*Aplica a la tabla*/
+th td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid #dddddd;
+    text-align: left;
+
+}
+
+ fieldset{
+    padding: 15px;
+
+ }
+
+/*Listas de horario.html*/
+main ul, main ol {
+padding-left: 24px;
+margin-bottom: 16px;
+}
+
+/*Para la lista descriptva*/
+#glosario dt{
+ font-weight: 700;
+ margin-top: 12px;
+}
+
+#glosario dd{
+ margin-left: 20px;
+ margin-bottom: 8px;
+}
+
+/*La sangrìa de dd es lo que hace visible la relaciòn entre el tèrmino y su definiciòn*/
+/*La tabla de calendario*/
+table{
+    border-collapse: collapse;
+    width: 16px;
+    margin-bottom: 24px;
+}
+
+caption{
+    padding: 8px;
+    font-weight: 7px;
+    margin-bottom: 24px;
+
+}
+theader th{
+    background-color: #1f4e79;
+    color: white
+    /*Esta parte trabaja los encabezados de la tabla*/
+}
+
+tfoot{
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
+}
+ç
