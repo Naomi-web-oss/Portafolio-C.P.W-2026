@@ -142,10 +142,12 @@ Proyecto propio construido de forma autónoma.
 
 | Sesión | Tema                       | Qué aprendí |        Trabajo        |     Captura      |
 | :----: | :------------------------- | :---------- | :-------------------: | :--------------: |
+
 |  S11   | Introducción a CSS         | introducción a CSS, sintaxis, formas de aplicar estilos y validación de CSS            | [ver](./unidad-03-css/sitio-demo/index.html) | [ver](recursos/S11.intro-css-sintaxis.png) |
 |  S12   | Selectores y pseudo-clases | Selectores, pseudo-clases, pseudo-elementos y introducción a la tipografía            | [ver](unidad-03-css/sitio-demo/articulo.html) | [ver](recursos/S12.Selectores.png) |
 |  S13   | Tipografía y color         |  tipografía avanzada, color y fondos | [ver](unidad-03-css/sitio-demo/index.html) | [ver](recursos/S.13-Tipografia-fondos.png) |
 |  S14   | Modelo de cajas            |  Modelo de cajas y tablas | [ver](unidad-03-css/sitio-demo-estilos.css) | [ver](recursos/) |
+
 |  S15   | Display y posicionamiento  |             | [ver](unidad-03-css/) | [ver](recursos/) |
 |  S16   | Flexbox                    |             | [ver](unidad-03-css/) | [ver](recursos/) |
 |  S17   | CSS Grid                   |             | [ver](unidad-03-css/) | [ver](recursos/) |
