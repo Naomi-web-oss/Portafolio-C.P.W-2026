@@ -21,8 +21,12 @@ h1{
     text-align:center;
 }
 
+header nav ul{
+    list-style-type: none;
+    /*Quita las viñetas y el con
+}
 
-/*Clase*/
+/*Aplicar estilizar a Clase*/
 
 .descatado{
     background-color: rgb(9, 175, 94);
@@ -89,8 +93,18 @@ header nav{
 
 }
 
-main{
-    margin-width:1000px;
+header nav a{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 16px 15px;
+
+}
+
+.contenedor{
+    margin:1000px;
     margin: 0 auto;
     /*En el margin 0 auto el 0 aplica a la parte vertical y horizontal, el auto reparte el espacio sobrante por igual en ambos lados,lo centra en un elemento con ancho*/
 }
@@ -149,6 +163,9 @@ th td{
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    border: 1px solid #dddddd;
+    text-align: left;
+
 }
 
  fieldset{
@@ -156,3 +173,46 @@ th td{
 
  }
 
+/*Listas de horario.html*/
+main ul, main ol {
+padding-left: 24px;
+margin-bottom: 16px;
+}
+
+/*Para la lista descriptva*/
+#glosario dt{
+ font-weight: 700;
+ margin-top: 12px;
+}
+
+#glosario dd{
+ margin-left: 20px;
+ margin-bottom: 8px;
+}
+
+/*La sangrìa de dd es lo que hace visible la relaciòn entre el tèrmino y su definiciòn*/
+/*La tabla de calendario*/
+table{
+    border-collapse: collapse;
+    width: 16px;
+    margin-bottom: 24px;
+}
+
+caption{
+    padding: 8px;
+    font-weight: 7px;
+    margin-bottom: 24px;
+
+}
+theader th{
+    background-color: #1f4e79;
+    color: white
+    /*Esta parte trabaja los encabezados de la tabla*/
+}
+
+tfoot{
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
+}
+ç
