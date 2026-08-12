@@ -1,108 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-practica-s06-formularios
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="descripcion"
-      content="sitio registro para el curso de codificación de páginas web"
-    />
-    <meta
-      name="keywords"
-      content="HTML , CSS , Javascript , codificación de páginas web"
-    />
-    <meta name="author" content="Naomi-Cantillo" />
-    <title>Formulario / Registro</title>
-</head>
-<body>
-<header>
-    <!--Header: Cabecera de la pàgina y generalmente se repite en todo el sitio-->
-    <h1>Codificaciòn de pàginas web</h1> 
-    <p>Sitio de demostraciòn del mòdulo</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="articulo.html">Artìculo</a></li>
-        <li><a href="horario.html">Horario</a></li>
-        <li><a href="registro.html">Registro</a></li>
-      </ul>
-    </nav><br><hr>
-</header>
-
-<main><br>
-    <h2>Formulario de matricula</h2><br>
-    <form action="#" method="post">
-        <!--FORM: contenedor del formulario--><!--El action es donde se envìan el formulario--><!--El method es el mètodo de envio--> <!--post: envio de datos por el cuerpo de la solicitud -->
-      <legend>Formulario de registro</legend>
-        
-    <p>
-      <label for="Nombre">Nombre:</label>
-      <input type="text" id="Nombre" name="Nombre" required><br><br>
-    </p>
-    
-    <p>
-    <label for="Correo">Correo electrónico:</label>
-    <input type="email" id="Correo" name="Correo" required><br><br>
-    </p>
-    
-
-    <button type="submit">Enviar</button>
-
-    </fieldset>
-    </form><br><br><hr><br>
-
-<fieldset>
-    <legend>Detalles de matricula</legend>
-    
-    <p>
-        <label for="telefono">Telèfono:</label>
-        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}"><br><br>
-    </p>
-
-    <p>
-        <label for="Fecha">Fecha de inicio:</label>
-        <input type="date" id="Fecha" name="Fecha" required title="Seleccione una fecha de inicio"><br><br>
-    </p>
-
-    <p>
-        <label for="Edad">Edad:</label>
-        <input type="number" id="Edad" name="Edad" required min="18" max="80" step="1" title="Ingrese su edad (18-80)"><br><br>
-    </p>
-
-</fieldset><br><hr><br>
-
-    <legend>Modalidad</legend>
-    <input type="radio" id="presencial" name="modalidad" value="presencial" required>
-    <label for="presencial">Presencial</label><br>  
-
-     <input type="radio" id="virtual" name="modalidad" value="virtual" required>
-    <label for="virtual">virtual</label><br> 
-
-    <input type="radio" id="mixta" name="modalidad" value="mixta" required>
-    <label for="mixta">Mixta</label><br>
-    
-<p>
-    <label for="Horario">Horario preferido</label>
-    <select id="Horario" name="Horario" required>
-        <option value="">Seleccione un horario</option>
-        <option value="mañana">Mañana</option>
-        <option value="tarde">Tarde</option>
-        <option value="noche">Noche</option>
-    </select>
-</p>
-<p><label for="Comentarios">Comentarios:</label>
-    <textarea id="Comentarios" name="Comentarios" rows="4" cols="50" maxlength="200" title="Máximo 200 caracteres"></textarea><br><br>
-
-</p>
-</fieldset>
-</main>
-<br>
-</body>
-    
-   <footer>
-    Copy right © 2026 INA Naomi Cantillo - Todos los derechos reservados
-  </footer> 
 
 <head>
   <meta charset="UTF-8">
@@ -127,7 +24,7 @@ practica-s06-formularios
         <li><a href="articulo.html">Artículo</a></li>
         <li><a href="horario.html">Horario</a></li>
         <li><a href="registro.html">Registro</a></li>
-        <li><a href="galería.html">Galería</a></li>
+        <li><a href="galeria.html">Galería</a></li>
         <li><a href="insignia.html">Insignia</a></li>
       </ul>
     </nav>
@@ -138,6 +35,70 @@ practica-s06-formularios
     <article>
       <h2>Formulario de matrícula</h2>
 
+          <p>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required /><br /><br />
+          </p>
+
+          <p>
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel" id="telefono" name="telefono" required pattern="[0-9]{8}"
+              title="Ingrese un número de teléfono válido de 8 dígitos"
+            /><br>
+          </p>
+        </fieldset><br>
+        <!--Cierre del fieldset información personal-->
+
+        <fieldset>
+          <legend>Detalles de Matrícula</legend>
+
+          <p>
+            <label for="fecha">Fecha de inicio:</label>
+            <input type="date" id="fecha" name="fecha" /><br /><br />
+          </p>
+
+          <p>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="15" max="80" step="1"><br>
+          </p>
+        </fieldset><br>
+        <!--Cierre del fieldset detalles de matrícula-->
+
+        <fieldset>
+          <legend>Modalidad</legend>
+          <input type="radio"id="presencial" name="modalidad" value="presencial" />
+          <label for="presencial">Presencial</label><br />
+          <input type="radio" id="virtual" name="modalidad" value="virtual" />
+          <label for="virtual">Virtual</label><br />
+          <input type="radio" id="mixta" name="modalidad" value="mixta" />
+          <label for="mixta">Mixta</label><br>
+        </fieldset><br>
+        <!--Cierre del fieldset modalidad-->
+
+        
+        <label for="horario">Horario preferido</label><br><br>
+        <select id="horario" name="horario">
+          <option value="mañana">Mañana</option>
+          <option value="tarde">Tarde</option>
+          <option value="noche">Noche</option>
+        </select>
+        <br><br>
+
+        
+        <label for="comentarios">Comentarios:</label><br />
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="200"></textarea><br /><br />
+
+        <input type="checkbox" id="terminos" name="terminos" required />
+        <label for="terminos">Acepto los términos y condiciones</label
+        ><br /><br />
+
+        <button type="submit">Enviar matrícula</button>
+      </form>
+    </main>
+
+    <footer>
+      <!--Footer: Pie, créditos, contacto, derechos-->
       <p>
         Complete los datos para inscribirse en una sesión de refuerzo.
         Los campos marcados con asterisco (*) son obligatorios.
@@ -297,7 +258,7 @@ practica-s06-formularios
     <h2>Contacto</h2>
     <address>
       Instituto Nacional de Aprendizaje<br>
-      Correo: <a href="mailto:cantillonaomi96@gmail.com">cantillonaomi96@gmail.com</a>
+      Correo: <a href="mailto:giocoto@ejemplo.com">giocoto@ejemplo.com</a>
     </address>
     <p><small>&copy; 2026 &middot; INA &middot; Todos los derechos reservados</small></p>
   </footer>
@@ -305,4 +266,3 @@ practica-s06-formularios
 </body>
 
 </html>
-
