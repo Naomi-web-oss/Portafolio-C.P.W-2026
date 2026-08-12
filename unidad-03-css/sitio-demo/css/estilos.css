@@ -5,11 +5,13 @@ Por omisión son 16px, */
 html{
     font-size: 100%;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }/*esta regla elimina los márgenes y el relleno predeterminados de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
+
 body {
     font-size: 1rem;
     line-height: 1.6;
@@ -213,6 +215,29 @@ header nav li{
  nav li{
     margin-left: 15px;
  }
+
+#glosario dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#glosario dd{
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+ table{
+    border: collapse;
+    width: 16px;
+    margin-bottom: 24px;
+ }
+
+caption{
+    padding: 8px;
+    font-weight: 7px;
+    margin-bottom: 24px;
+}
+
 
 /*Las figuras de galeria.html*/
  figure{
