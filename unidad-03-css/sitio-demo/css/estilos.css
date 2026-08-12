@@ -27,7 +27,10 @@ posicionamiento
 header nav ul{
     list-style-type: none;
     /*Quita las viñetas*/
-=======
+}
+
+
+
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -141,7 +144,9 @@ th td{
 main ul  main ol {
 padding-left: 24px;
 margin-bottom: 16px;
-=======
+
+ }
+
 /*Pseudo-clase :hober*/
 nav a:hover {
     color: #f8cbad; /*al pasar el cursor*/
@@ -208,5 +213,3 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
 
 
 /*Patròn para este caso*/
-=======
-Main
