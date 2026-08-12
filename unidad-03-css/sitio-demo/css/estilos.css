@@ -221,3 +221,8 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
 
 
 /*Patròn para este caso*/
+
+.figura-destacada{
+    position: relative;
+    /*Posiciona como padre o elemento padre y este no se mueve.Es referencia de hijos absolutos*/
+}
