@@ -104,12 +104,21 @@ header ul li {
 
 /*Aplicar estilos a identificadores o IDs*/
 #inicio {
+    position: fixed; /*fija con respecto a la ventana. cabecera queda arriba*/
+    top:0;
+    left: 0;
+    width: 100;
     background-image: url(../recursos/fondo1.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px;
 }
+
+/*#inicio{
+    position: sticky;/*Fluye normal al principio y se pega al llegar a arriba o limite de su contenedor
+    top: 0;
+}*/
 
 /*estilos solo a enlces dentro del nav*/
 nav a {
@@ -173,6 +182,7 @@ article p::first-letter {
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     line-height: 1.6;
+    padding-top: 200px;
 }
 
 
@@ -235,3 +245,5 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
     border-radius: 4px;
     font-size: 0.875rem;
 }
+
+
