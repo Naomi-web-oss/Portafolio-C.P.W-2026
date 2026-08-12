@@ -80,6 +80,7 @@ main a {
 blockquote p {
     font-style: italic;
     color: #555;
+    border-left: 4px solid #1f4e79;
 }
 
 /* Transformacion y espacio*/
@@ -201,6 +202,13 @@ header nav li{
  nav li{
     margin-left: 15 px;
  }
+
+/*Las figuras de galeria.html*/
+ figure{
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 12px;
+}
 
 
 /*Los 5 valores de position 
