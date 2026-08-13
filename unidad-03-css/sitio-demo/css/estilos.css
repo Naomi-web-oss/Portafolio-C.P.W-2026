@@ -199,14 +199,17 @@ tfoot{
     background-color: #f5f7fa;
 }
 
-
-header nav li{
-    display: inline-block;
-    /*coloca las opciones de menù en linea, al lado del otro*/
+header nav ul{
+    display:flex;/*Activa Flexbox y coloca en fila horizontal los elementos por defecto*/
+    list-style-type: none;
+    flex-direction: row;
+    /*Quita las viñetas y el subrayado*/
 }
 
- header nav li{
+ /*header nav li{
     display:inline-block
+    margin-rigth:15px
+     /*coloca las opciones de menù en linea, al lado del otro
  }
 
 
