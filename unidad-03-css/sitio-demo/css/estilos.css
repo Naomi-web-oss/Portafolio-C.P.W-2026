@@ -59,7 +59,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: cen-ter;
     gap: 15px;
     background-color: #dce6f1;
     padding: 20px;
