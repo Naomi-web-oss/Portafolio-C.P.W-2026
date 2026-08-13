@@ -149,7 +149,7 @@ Proyecto propio construido de forma autónoma.
 |  S14   | Modelo de cajas            |  Modelo de cajas y tablas | [ver](unidad-03-css/sitio-demo-estilos.css) | [ver](recursos/) |
 
 |  S15   | Display y posicionamiento  |  Posicionamiento, z-index   | [ver](unidad-03-css/sitio-demo/css/estilos.css) | [ver](recursos/Posicionamiento.png) |
-|  S16   | Flexbox                    | Trabajamos con propiedaddes de flexblox para posicoonar cajas y sus elementos   | [ver](unidad-03-css/sitio-demo/css/estilos.css) | [ver](recursos/) |
+|  S16   | Flexbox                    | Trabajamos con propiedaddes de flexblox para posicoonar cajas y sus elementos   | [ver](unidad-03-css/sitio-demo/css/estilos.css) | [ver](recursos/EvidenciaCSS-sesión-16-Flexbox.png) |
 |  S17   | CSS Grid                   |             | [ver](unidad-03-css/) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |             | [ver](unidad-03-css/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |             | [ver](unidad-03-css/) | [ver](recursos/) |
