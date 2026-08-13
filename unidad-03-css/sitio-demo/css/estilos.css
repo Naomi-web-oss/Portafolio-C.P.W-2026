@@ -297,10 +297,14 @@ escala de valores de index
     flex-grow: 1;/*cuando crece si sobra espacio .0 no crece*/
     flex-shrink: 1;/*cuando encoge si sobre espacio .0 no encoge*/
     flex-basis: 0;
+    flex-wrap: wrap-reverse;/*wrap salta hacia abajo. wrap-reverse salta arriba. nowrap es sin salto*/
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
 .tarjeta{
     display: flex;
     flex: 1;
     gap: 20px;
+    flex-wrap: nowrap;
 }
