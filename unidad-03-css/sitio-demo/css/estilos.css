@@ -104,6 +104,9 @@ header ul li {
 
 /*Aplicar estilos a identificadores o IDs*/
 #inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed; /*fija con respecto a la ventana. cabecera queda arriba*/
     top:0;
     left: 0;
@@ -112,7 +115,7 @@ header ul li {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 12px 20px;
     z-index: 100; /*Cuanto mayor es el número más al frente va a estar, pasando por encima de todo lo demás*/
 }
 
@@ -202,7 +205,13 @@ tfoot{
 header nav ul{
     display:flex;/*Activa Flexbox y coloca en fila horizontal los elementos por defecto*/
     list-style-type: none;
-    flex-direction: row;
+    gap: 15px;/*Separación uniforme entre elementos
+    /*justify-content: flex-start;/*coloca elementos al inicio de la fila
+    justify-content: flex-end;/*coloca elementos al final de la fila
+    justify-content: center;/*coloca elementos al centro de la fila
+    justify-content: space-between;/*coloca elementos extremos pegados
+    justify-content: space-around;/*espacio alrededor de cada uno*/
+    justify-content: space-evenly;/*coloca todos los espacios iguales*/
     /*Quita las viñetas y el subrayado*/
 }
 
