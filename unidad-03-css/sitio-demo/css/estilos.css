@@ -16,6 +16,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #fcfcfc;
+    padding-top: 100px;
 
 }/*esta regla define la fuente y el color del texto en el cuerpo del documento*/
 h1{
@@ -28,6 +29,7 @@ header nav ul{
     list-style-type: none;
     /*Quita las viñetas*/
 }
+
 
 
 
@@ -92,6 +94,11 @@ header nav a {
     text-decoration: none;
 
 }
+
+header nav{
+    align-self: center;/*anula a aling-items para el elemento específico*/
+}
+
 header ul li {
     list-style-type: none;
 }
@@ -106,7 +113,10 @@ header ul li {
 #inicio {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: flex-start;/*acomoda arriba*/
+    /*align-items: center;/*acomoda al centro*/
+    /*align-items: flex-end;/*acomoda abajo*/
+    align-items: baseline;/*alinea por la linea base del texto*/
     position: fixed; /*fija con respecto a la ventana. cabecera queda arriba*/
     top:0;
     left: 0;
@@ -268,3 +278,11 @@ escala de valores de index
 1000 ventanas emergentes y capas superpuestas
 9999 no hace falta usarlo casi nunca porque no deja margen a otro valor por encima.
 */
+
+
+.centrado{
+    display: flex;
+    justify-content: center;/*centrado horizontal*/
+    align-items: center;/*centrado vertical*/
+
+}
