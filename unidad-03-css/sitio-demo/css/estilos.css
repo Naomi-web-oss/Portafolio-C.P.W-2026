@@ -335,9 +335,67 @@ escala de valores de index
     border-radius: 8px;
 }
 
-.tarjeta{
+/*.tarjeta{
     display: flex;
     flex: 1;
     gap: 20px;
     flex-wrap: nowrap;
+}*/
+
+.galeria-grid{
+    display: grid;/*activa grid al igual que flexbox, se declara en el contenedor */
+    /*grid-template-columns:1fr 1fr 1fr;*/
+    /*grid-template-columns: repeat(3 1fr);*/
+    grid-template-columns:2fr 1fr 1fr;/*la primera doble que las otras*/
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 20px 50px 50px;
+}
+
+.galeria-grid figure:fist-of-style{
+    grid-column: 1 / 3; /*Desde la LÍNEA 1 A LA LÍNEA 3: ABARCA LAS COLUMNAS 1 2
+    el segundo numero es la linea dond termina, no la última colum que ocupa*/
+}
+
+/*forma abreviada de span*/
+
+.galeria-grid figure:fist-of-style{
+    grid-column: span 2;/*ocupa dos columnas, desde donde le toque. Mas legible y no depende una posición*/
+}
+
+/*con filas*/
+
+.destacada{
+    grid-row: span 2;/*abarca dos filas*/
+}
+
+#contenido{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 24px;
+    grid-template-areas: 'indice principal' 'indice lateral';
+    /*css dibuja la estructura, cada cadena de tetxo de una fila.
+     cada palabra dentro es una celda, 
+     repetir un nombre hace que una zona abarque varias celdas, 
+    aquí el índice ocupa dos filas de la primera columna*/
+
+    /*asignra cada elemento a su área*/
+    #contenido > nav {grid-area: indice;}
+    #contenido > article {grid-area: principal;}
+    #contenido > aside {grid-area: lateral;}
+    grid-template-areas: 'indice principal';
+}
+
+/*Que las imagenes se desformen*/
+.galeria-grid{
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /*Recorta por el centro en vez de deformar*/
+    border-radius: 6px;
+}
+
+
+.tarjeta2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
 }
