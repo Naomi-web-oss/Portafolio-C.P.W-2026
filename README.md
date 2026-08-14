@@ -150,7 +150,7 @@ Proyecto propio construido de forma autónoma.
 
 |  S15   | Display y posicionamiento  |  Posicionamiento, z-index   | [ver](unidad-03-css/sitio-demo/css/estilos.css) | [ver](recursos/Posicionamiento.png) |
 |  S16   | Flexbox                    | Trabajamos con propiedaddes de flexblox para posicoonar cajas y sus elementos   | [ver](unidad-03-css/sitio-demo/css/estilos.css) | [ver](recursos/EvidenciaCSS-sesión-16-Flexbox.png) |
-|  S17   | CSS Grid                   |             | [ver](unidad-03-css/) | [ver](recursos/) |
+|  S17   | CSS Grid                   | Trabajamos con propiedades grid     | [ver](unidad-03-css/sitio-demo/css/estilos.css) | [ver](recursos/EvidenciaCSS-sesión-17-grid.png) |
 |  S18   | Componentes estilizados    |             | [ver](unidad-03-css/) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |             | [ver](unidad-03-css/) | [ver](recursos/) |
 |  S20   | SCSS y repaso              |             | [ver](unidad-03-css/) | [ver](recursos/) |
