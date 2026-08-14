@@ -392,3 +392,10 @@ escala de valores de index
     object-fit: cover; /*Recorta por el centro en vez de deformar*/
     border-radius: 6px;
 }
+
+
+.tarjeta2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
