@@ -335,9 +335,16 @@ escala de valores de index
     border-radius: 8px;
 }
 
-.tarjeta{
+/*.tarjeta{
     display: flex;
     flex: 1;
     gap: 20px;
     flex-wrap: nowrap;
+}*/
+
+.galeria-grid{
+    display: grid;/*activa grid al igual que flexbox, se declara en el contenedor */
+    grid-template-columns:lfr lfr lfr;
+    grid-template-columns: repeat(3 lfr);
+    gap: 20px;
 }
