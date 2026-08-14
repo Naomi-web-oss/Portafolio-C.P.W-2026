@@ -350,3 +350,22 @@ escala de valores de index
     grid-template-rows: 2fr 1fr 1fr;
     gap: 20px 50px 50px;
 }
+
+#contenido{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 24px;
+    grid-template-areas: 'indice principal' 'indice lateral';
+    /*css dibuja la estructura, cada cadena de tetxo de una fila.
+     cada palabra dentro es una celda, 
+     repetir un nombre hace que una zona abarque varias celdas, 
+    aquí el índice ocupa dos filas de la primera columna*/
+
+    /*asignra cada elemento a su área*/
+    #contenido > nav {grid-area: indice;}
+    #contenido > article {grid-area: principal;}
+    #contenido > aside {grid-area: lateral;}
+    grid-template-areas: 'indice principal';
+}
+
+
