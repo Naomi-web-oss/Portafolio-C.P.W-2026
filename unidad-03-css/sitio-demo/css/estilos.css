@@ -344,7 +344,9 @@ escala de valores de index
 
 .galeria-grid{
     display: grid;/*activa grid al igual que flexbox, se declara en el contenedor */
-    grid-template-columns:lfr lfr lfr;
-    grid-template-columns: repeat(3 lfr);
-    gap: 20px;
+    /*grid-template-columns:1fr 1fr 1fr;*/
+    /*grid-template-columns: repeat(3 1fr);*/
+    grid-template-columns:2fr 1fr 1fr;/*la primera doble que las otras*/
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: 20px 50px 50px;
 }
