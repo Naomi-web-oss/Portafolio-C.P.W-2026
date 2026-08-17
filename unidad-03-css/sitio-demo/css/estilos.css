@@ -291,9 +291,11 @@ caption{
 
 /*Las figuras de galeria.html*/
  figure{
+    background:white;
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
+    box-shadow: (0,2,8,0.8)rgba;
 }
 
 
@@ -355,12 +357,13 @@ escala de valores de index
     border-radius: 8px;
 }
 
-/*.tarjeta{
-    display: flex;
-    flex: 1;
-    gap: 20px;
-    flex-wrap: nowrap;
-}*/
+.tarjeta{
+    background-color: rgba(255, 255, 255, 0.686);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: (0,12,0,0);
+    /*el primer desplazamiento horintal, el 4px es el desplazamiento vèrtical,el 12px es el desenfoque, cuanto mayor, màs difuso*/
+}
 
 .galeria-grid{
     display: grid;/*activa grid al igual que flexbox, se declara en el contenedor */
@@ -461,8 +464,8 @@ form input::focus,
 form input::select, 
 form input::focus; {
 
-    border-color: #566672
-    box-chadow: (0,0,0,5)
+    border-color: #566672;
+    box-shadow:(0,0,0,0,5) rgba;
 } /**/
 /*EL FOCUS: no es solo decoraciòn es una guìa*/
 
