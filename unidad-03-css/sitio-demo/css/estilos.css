@@ -456,3 +456,34 @@ font input[type="checkbox"] + label {
    display:inline;
    font-weight:400;
 }  /*El selector + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
+
+form input::focus, 
+form input::select, 
+form input::focus; {
+
+    border-color: #566672
+    box-chadow: (0,0,0,5)
+} /**/
+/*EL FOCUS: no es solo decoraciòn es una guìa*/
+
+form input::valid:not{
+    border-color:#e30808;
+}
+
+form input::valid:not{
+    border-color:#0db373;
+}
+
+/**/
+
+/**/
+
+form small{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #0b4fb5c1;
+}
+
+/*Acompañan a los campos */
