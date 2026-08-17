@@ -487,3 +487,45 @@ form small{
 }
 
 /*Acompañan a los campos */
+
+.boton .boton-secundario{
+    background-color: #c55a11;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family:inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*Los tres estados: 1: hover: màs oscuro al pasar el cursos*/
+.boton.button:hover{
+    background-color: #282323;
+}
+
+/*Estado: 2: active:Aùn màs oscuro mientras se pulsa*/
+.boton.button:active{
+    background-color: #8a3b0b;
+}
+
+/*Estado: 3: focus*/
+.boton.button:focus{
+    background-color: #282323;
+    outline: 2px solid #f5c518;
+    outline-offset: 2px;
+}
+
+/*Variante secundaria*/
+
+.boton-secundario{
+    background-color:#6b7280;
+}
+
+.boton-secundario:hover{
+    background-color: #4b5563;
+    color: white;
+
+}
+
