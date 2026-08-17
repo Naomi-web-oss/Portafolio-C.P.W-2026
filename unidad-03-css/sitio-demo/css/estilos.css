@@ -166,7 +166,8 @@ th td{
     text-align: left;
     border-bottom: 1px solid #ddd;
     border: 1px solid #dddddd;
-
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
  fieldset{
@@ -189,6 +190,11 @@ nav a:hover {
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
 tbody tr:nth-child(even){
     background-color: #e0d8d8;
+}
+
+tbody tr:hover{
+    background-color: #1f4e79;
+    /*La novedad es resaltar la fila de abajo del cursor,no es decoraciòn*/
 }
 /*Pseudo-elemento ::first-letter y ::selection*/
 article p::first-letter {
@@ -220,7 +226,9 @@ tfoot{
     padding: 12px;
     font-style: italic;
     background-color: #f5f7fa;
+    border-top: 1px solid #174172;
 }
+
 
 header nav ul{
     display:flex;/*Activa Flexbox y coloca en fila horizontal los elementos por defecto*/
@@ -266,7 +274,10 @@ caption{
     padding: 8px;
     font-weight: 7px;
     margin-bottom: 24px;
+    text-aling:left;
+    color:#767280;
 }
+    /* El caption:*/
 
 
 /*Las figuras de galeria.html*/
