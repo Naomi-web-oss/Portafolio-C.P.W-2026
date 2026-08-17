@@ -57,6 +57,7 @@ header {
     background-color: #1f4e79;
     color: white;
 }
+
 footer{
     display: flex;
     flex-direction: row;
@@ -66,8 +67,6 @@ footer{
     background-color: #dce6f1;
     padding: 20px;
     margin-top: 32px;
-   
-    
 
 }
 .portada-texto {
@@ -172,8 +171,18 @@ th td{
 
  fieldset{
     padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+ }
+
+ legend{
+    padding: 0 8px;
+    font-weight: 700;
+    color:#174172
 
  }
+
 
 /*Listas de horario.html*/
 main ul  main ol {
@@ -282,9 +291,11 @@ caption{
 
 /*Las figuras de galeria.html*/
  figure{
+    background:white;
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
+    box-shadow: (0,2,8,0.8)rgba;
 }
 
 
@@ -346,12 +357,13 @@ escala de valores de index
     border-radius: 8px;
 }
 
-/*.tarjeta{
-    display: flex;
-    flex: 1;
-    gap: 20px;
-    flex-wrap: nowrap;
-}*/
+.tarjeta{
+    background-color: rgba(255, 255, 255, 0.686);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: (0,12,0,0);
+    /*el primer desplazamiento horintal, el 4px es el desplazamiento vèrtical,el 12px es el desenfoque, cuanto mayor, màs difuso*/
+}
 
 .galeria-grid{
     display: grid;/*activa grid al igual que flexbox, se declara en el contenedor */
@@ -389,11 +401,12 @@ escala de valores de index
      repetir un nombre hace que una zona abarque varias celdas, 
     aquí el índice ocupa dos filas de la primera columna*/
 
-    /*asignra cada elemento a su área*/
-    #contenido > nav {grid-area: indice;}
+    /*asignar cada elemento a su área*/
+    /*#contenido > nav {grid-area: indice;}
     #contenido > article {grid-area: principal;}
     #contenido > aside {grid-area: lateral;}
-    grid-template-areas: 'indice principal';
+   /*grid-template-areas: 'indice principal';*/
+
 }
 
 /*Que las imagenes se desformen*/
@@ -409,4 +422,119 @@ escala de valores de index
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
+}
+
+form label{ /*Display block: pone la etiqueta sobre el campo*/
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+form input [type="text"],
+form input [type="email"],
+form input [type="tel"],
+form input [type="password"],
+form input [type="number"],
+form input [type="date"],
+form select,
+form textarea 
+    width: 100%;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px
+    font-size: 1rem;{
+}
+
+
+/*Casillas por separado*/
+font input[type="radio"] + label,
+font input[type="checkbox"] + label {
+   width:auto;
+   margin-right: 6px;
+   margin-bottom: 0;
+}
+    
+font input[type="radio"] + label,
+font input[type="checkbox"] + label {
+   display:inline;
+   font-weight:400;
+}  /*El selector + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
+
+form input::focus, 
+form input::select, 
+form input::focus; {
+
+    border-color: #566672;
+    box-shadow:(0,0,0,0,5) rgba;
+} /**/
+/*EL FOCUS: no es solo decoraciòn es una guìa*/
+
+form input::valid:not{
+    border-color:#e30808;
+}
+
+form input::valid:not{
+    border-color:#0db373;
+}
+
+/**/
+
+/**/
+
+form small{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #0b4fb5c1;
+}
+
+/*Acompañan a los campos */
+
+.boton .boton-secundario{
+    background-color: #c55a11;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family:inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*Los tres estados: 1: hover: màs oscuro al pasar el cursos*/
+.boton.button:hover{
+    background-color: #282323;
+}
+
+/*Estado: 2: active:Aùn màs oscuro mientras se pulsa*/
+.boton.button:active{
+    background-color: #8a3b0b;
+}
+
+/*Estado: 3: focus*/
+.boton.button:focus{
+    background-color: #282323;
+    outline: 2px solid #f5c518;
+    outline-offset: 2px;
+}
+
+/*Variante secundaria*/
+
+.boton-secundario{
+    background-color:#6b7280;
+}
+
+.boton-secundario:hover{
+    background-color: #4b5563;
+    color: white;
+
+}
+
+/*tarjeta interactiva*/
+
+.tarjeta figure:hover{
+    transform: translate(-5px);/*Valor negativo, va hacia arriba, valor positivo va hacia abajo*/
+    box-shadow:rgba(0, 0, 40, 0.35);
 }
