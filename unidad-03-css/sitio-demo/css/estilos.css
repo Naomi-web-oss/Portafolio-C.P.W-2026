@@ -57,6 +57,7 @@ header {
     background-color: #1f4e79;
     color: white;
 }
+
 footer{
     display: flex;
     flex-direction: row;
@@ -66,8 +67,6 @@ footer{
     background-color: #dce6f1;
     padding: 20px;
     margin-top: 32px;
-   
-    
 
 }
 .portada-texto {
@@ -172,8 +171,18 @@ th td{
 
  fieldset{
     padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+ }
+
+ legend{
+    padding: 0 8px;
+    font-weight: 700;
+    color:#174172
 
  }
+
 
 /*Listas de horario.html*/
 main ul  main ol {
@@ -389,11 +398,12 @@ escala de valores de index
      repetir un nombre hace que una zona abarque varias celdas, 
     aquí el índice ocupa dos filas de la primera columna*/
 
-    /*asignra cada elemento a su área*/
-    #contenido > nav {grid-area: indice;}
+    /*asignar cada elemento a su área*/
+    /*#contenido > nav {grid-area: indice;}
     #contenido > article {grid-area: principal;}
     #contenido > aside {grid-area: lateral;}
-    grid-template-areas: 'indice principal';
+   /*grid-template-areas: 'indice principal';*/
+
 }
 
 /*Que las imagenes se desformen*/
@@ -410,3 +420,39 @@ escala de valores de index
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
 }
+
+form label{ /*Display block: pone la etiqueta sobre el campo*/
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+form input [type="text"],
+form input [type="email"],
+form input [type="tel"],
+form input [type="password"],
+form input [type="number"],
+form input [type="date"],
+form select,
+form textarea 
+    width: 100%;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px
+    font-size: 1rem;{
+}
+
+
+/*Casillas por separado*/
+font input[type="radio"] + label,
+font input[type="checkbox"] + label {
+   width:auto;
+   margin-right: 6px;
+   margin-bottom: 0;
+}
+    
+font input[type="radio"] + label,
+font input[type="checkbox"] + label {
+   display:inline;
+   font-weight:400;
+}  /*El selector + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
