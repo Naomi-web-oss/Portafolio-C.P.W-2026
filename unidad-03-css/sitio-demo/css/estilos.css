@@ -365,7 +365,7 @@ escala de valores de index
     background-color: rgba(255, 255, 255, 0.686);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: (0,12,0,0);
+    box-shadow: 0 0 5px 3px rgba(35, 78, 121, 0.15);
     /*el primer desplazamiento horintal, el 4px es el desplazamiento vèrtical,el 12px es el desenfoque, cuanto mayor, màs difuso*/
 }
 
@@ -540,14 +540,15 @@ form small{
 /*tarjeta interactiva*/
 
 .tarjeta figure:hover{
-    transform: translate(10px);/*Valor negativo, va hacia arriba, valor positivo va hacia abajo*/
-    box-shadow:rgba(0, 0, 40, 0.35);
+    transform: translate(-5px);/*Valor negativo, va hacia arriba, valor positivo va hacia abajo*/
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.15);
     transform: scale(0.3px);/*Escalar 3 - 0del tamaño original*/
     transform: scale(2.1,0.9);/*X y Y por separado*/
     transform: translate(-5px);/*Desplazar */
     transform: rotate(5deg);
     transform: skew(10deg);
     transform: translate(-5px); scale:(1.0);
+    /*transition:all 1s ease;//*Adicional*/
 }
 
 /*Definir la transiciòn*/
