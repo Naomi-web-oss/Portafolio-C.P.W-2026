@@ -96,13 +96,7 @@ blockquote p {
 
 /* Transformacion y espacio*/
 
-header nav a {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 0.9rem;
-    text-decoration: none;
 
-}
 
 header nav{
     align-self: center;/*anula a aling-items para el elemento específico*/
@@ -179,7 +173,7 @@ th td{
  legend{
     padding: 0 8px;
     font-weight: 700;
-    color:#174172
+    color:#174172;
 
  }
 
@@ -191,9 +185,14 @@ margin-bottom: 16px;
 
  }
 
-/*Pseudo-clase :hober*/
-nav a:hover {
-    color: #f8cbad; /*al pasar el cursor*/
+/*Pseudo-clase :hover*/
+header nav a:hover {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white; /*al pasar el cursor*/
+    /**/
 }
 
 /*Pseudo-clase :nth-child: filas cebra en la tabla*/
@@ -314,6 +313,10 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
     position: relative; /*Posiciona como padre o elemento padre y este no se mueve.Es referencia de hijos absolutos*/
 }
 
+.figura-destacada:hover{
+    transform: scale(1.1); transform: rotate(2deg);
+}
+
 .etiqueta{
     position: absolute;
     top: 20px;
@@ -324,6 +327,7 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
     font-size: 0.875rem;
     z-index: 10;
 }
+
 
 /*z-index: SOLO FUNCIONA en elementos con positions declarado
 si static no funciona.
@@ -429,20 +433,21 @@ form label{ /*Display block: pone la etiqueta sobre el campo*/
     margin-bottom: 5px;
     font-weight: 600;
 }
-form input [type="text"],
-form input [type="email"],
-form input [type="tel"],
-form input [type="password"],
-form input [type="number"],
-form input [type="date"],
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
 form select,
-form textarea 
+form textarea{
     width: 100%;
     padding:10px;
     border: 1px solid #ccc;
     border-radius: 6px;
-    margin-bottom: 15px
-    font-size: 1rem;{
+    margin-bottom: 15px;
+    font-size:1rem;
+    font-family:inherit;
 }
 
 
@@ -460,21 +465,21 @@ font input[type="checkbox"] + label {
    font-weight:400;
 }  /*El selector + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
 
-form input::focus, 
-form input::select, 
-form input::focus; {
-
-    border-color: #566672;
-    box-shadow:(0,0,0,0,5) rgba;
+form input:focus, 
+form select:focus, 
+form textarea:focus{
+    outline:none;
+    border-color: #1f4e79;
+    box-shadow:0 0 5px 3px rgba(35, 78, 121, 0.15);
 } /**/
 /*EL FOCUS: no es solo decoraciòn es una guìa*/
 
-form input::valid:not{
-    border-color:#e30808;
+form input:invalid:not(:placeholder-shown){
+    border-color:#c0392b;
 }
 
-form input::valid:not{
-    border-color:#0db373;
+form input:valid:not(:placeholder-shown){
+    border-color:#2e7d32;
 }
 
 /**/
@@ -486,7 +491,7 @@ form small{
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 0.8rem;
-    color: #0b4fb5c1;
+    color: #0b4fb5;
 }
 
 /*Acompañan a los campos */
@@ -535,6 +540,44 @@ form small{
 /*tarjeta interactiva*/
 
 .tarjeta figure:hover{
-    transform: translate(-5px);/*Valor negativo, va hacia arriba, valor positivo va hacia abajo*/
+    transform: translate(10px);/*Valor negativo, va hacia arriba, valor positivo va hacia abajo*/
     box-shadow:rgba(0, 0, 40, 0.35);
+    transform: scale(0.3px);/*Escalar 3 - 0del tamaño original*/
+    transform: scale(2.1,0.9);/*X y Y por separado*/
+    transform: translate(-5px);/*Desplazar */
+    transform: rotate(5deg);
+    transform: skew(10deg);
+    transform: translate(-5px); scale:(1.0);
+}
+
+/*Definir la transiciòn*/
+@keyframes aparecer {
+   from{ 
+    opacity:0;
+    transform:translateY(20);
+}
+
+to{
+    opacity:1;
+    transform: translateY(0);
+}
+}
+
+@keyframes aparecer {
+    from{
+    transform: scale(1)
+}
+}
+
+/*Aplicaciòn de filtros.*/
+.galeria-grid img:hover{
+    filter: grayscale(100%);
+   transform: filter 0.4 ease;
+    filter:brightness(0.1);
+    filter: contrast(0,1);
+    filter:saturate(0.1);
+    filter:sepia(60%);
+    filter:invert(90%);
+    filter:opacity(20%);
+    filter:grayscale(100%) brightness(1.1)
 }
