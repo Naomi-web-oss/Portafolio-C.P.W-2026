@@ -474,7 +474,7 @@ form textarea:focus{
 } /**/
 /*EL FOCUS: no es solo decoraciòn es una guìa*/
 
-form input:valid:not(:placeholder-shown){
+form input:invalid:not(:placeholder-shown){
     border-color:#c0392b;
 }
 
@@ -491,7 +491,7 @@ form small{
     margin-top: 10px;
     margin-bottom: 15px;
     font-size: 0.8rem;
-    color: #0b4fb5c1;
+    color: #0b4fb5;
 }
 
 /*Acompañan a los campos */
@@ -551,27 +551,27 @@ form small{
 }
 
 /*Definir la transiciòn*/
-@keyframe aparecer
+@keyframes aparecer {
    from{ 
     opacity:0;
-    transform:translateY(2deg)
+    transform:translateY(20);
 }
 
 to{
-    opacity: 3;
+    opacity:1;
     transform: translateY(0);
 }
+}
 
-@keyframe aparecer
-    transform: scale
-
-.etiqueta{
-    animation pulso 2x 
-}  
+@keyframes aparecer {
+    from{
+    transform: scale(1)
+}
+}
 
 /*Aplicaciòn de filtros.*/
 .galeria-grid img:hover{
-    filter: grayscale(100deg);
+    filter: grayscale(100%);
    transform: filter 0.4 ease;
     filter:brightness(0.1);
     filter: contrast(0,1);
