@@ -173,7 +173,7 @@ th td{
  legend{
     padding: 0 8px;
     font-weight: 700;
-    color:#174172
+    color:#174172;
 
  }
 
@@ -192,7 +192,6 @@ header nav a:hover {
     font-size: 0.9rem;
     text-decoration: none;
     color: white; /*al pasar el cursor*/
-    background-color:;
     /**/
 }
 
@@ -314,6 +313,10 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
     position: relative; /*Posiciona como padre o elemento padre y este no se mueve.Es referencia de hijos absolutos*/
 }
 
+.figura-destacada:hover{
+    transform: scale(1.1); transform: rotate(24);
+}
+
 .etiqueta{
     position: absolute;
     top: 20px;
@@ -323,6 +326,10 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
     border-radius: 4px;
     font-size: 0.875rem;
     z-index: 10;
+}
+
+.etiqueta:hover{
+
 }
 
 /*z-index: SOLO FUNCIONA en elementos con positions declarado
