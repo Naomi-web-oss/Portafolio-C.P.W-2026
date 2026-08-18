@@ -314,7 +314,7 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
 }
 
 .figura-destacada:hover{
-    transform: scale(1.1); transform: rotate(24);
+    transform: scale(1.1); transform: rotate(2deg);
 }
 
 .etiqueta{
@@ -328,9 +328,6 @@ Sticky:Fluye normal hasta llegar a un umbral, y entonces se pega*/
     z-index: 10;
 }
 
-.etiqueta:hover{
-
-}
 
 /*z-index: SOLO FUNCIONA en elementos con positions declarado
 si static no funciona.
@@ -553,3 +550,34 @@ form small{
     transform: translate(-5px); scale:(1.0);
 }
 
+/*Definir la transiciòn*/
+@keyframe aparecer
+   from{ 
+    opacity:0;
+    transform:translateY(2deg)
+}
+
+to{
+    opacity: 3;
+    transform: translateY(0);
+}
+
+@keyframe aparecer
+    transform: scale
+
+.etiqueta{
+    animation pulso 2x 
+}  
+
+/*Aplicaciòn de filtros.*/
+.galeria-grid img:hover{
+    filter: grayscale(100deg);
+   transform: filter 0.4 ease;
+    filter:brightness(0.1);
+    filter: contrast(0,1);
+    filter:saturate(0.1);
+    filter:sepia(60%);
+    filter:invert(90%);
+    filter:opacity(20%);
+    filter:grayscale(100%) brightness(1.1)
+}
