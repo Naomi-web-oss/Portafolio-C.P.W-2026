@@ -75,13 +75,13 @@ h1,h2,h3{
 }
 
 
-h1{  (font-size: 0.4rem);
-h2  (font-size: 0.4rem);
-h3  (font-size: 0.4rem);
-}
+h1{  font-size: 0.4rem;}
+h2{ font-size: 0.4rem;}
+h3{ font-size: 0.4rem;}
+
 
 p{
-    margin-bottom: ;
+    margin-bottom: auto;
 }
 
 a{
@@ -90,7 +90,7 @@ a{
 }
 
 img{
-    max-width: ;
+    max-width: auto;
     height: auto;
     display: block;
 }
