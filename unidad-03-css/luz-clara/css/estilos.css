@@ -56,3 +56,13 @@ font-size:62.5%; /*Por omisiòn el navegador utiliza 16px para el tamaño ease*/
 
 scroll-behavior: smooth/*Saltos suaves al usar navegaciòn con anclas*/;
 }
+
+body{
+    font-size: 16px;/*1.6rem. Si no se agrega esta lìnea el texto no toma el valor de los 16px base y quedarìa un texto casi ilegible.*/
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+    color: var(--color-tinta);
+    background-color: var(--color-fondo);
+    
+
+}
