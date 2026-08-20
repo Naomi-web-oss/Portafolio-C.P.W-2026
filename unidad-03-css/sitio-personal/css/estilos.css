@@ -36,7 +36,7 @@ h1{
     top:0;
     left:0;
     background-color:#0c1683;
-    width: 100px;
+    width: 100%;
     background-image: url(../recursos/fondo1);
     background-size: cover;
     background-repeat: center;

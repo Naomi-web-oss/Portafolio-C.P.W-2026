@@ -1,0 +1,112 @@
+/* ESTUDIO LUZ CLARA */
+
+/* VARIABLES Y CONFUGIRACIÒN
+Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
+
+/* Se declaran dentro :root; que representa el elemento html es el de todos */
+
+
+:root{
+    /* Paleta de colores */
+     --color-tinta:#1a1a1a;/*texto principal */
+     --color-scale:#cbcbcb;/*Texto secundario*/
+     --color-marca:#2c3e50;/*El color del estudio*/
+     --color-acento:#c87941;/*El color de los botones*/
+     --color-acento-osc:#a45f2e; /*Terracota oscuro*/
+     --color-fondo: #fafaf8;/*Color de fondo*/
+     --color-fondo-alt:#f0cee9; /*Para alterar fondo secciones */
+     --color-linea: #dddad3; /*Bordes y separadores*/
+     --color-blanco:#ffffff; /*blanco y puro*/
+
+
+
+/* TIPOGRAFIA */
+
+--fuente-titulo:Georgia,Hervetica,san serif;
+--fuente-texto:'Segoe ul',Arial, sans-serif;
+
+
+/* ESPACIADO CONVERSIÒN 1 REM = 10 PÌXELS*/
+--esp-sm:0.8rem;/*8px*/
+--esp-csm:1.6rem;/*16px*/
+--esp--md:2.4px;/*24px*/
+--esp-lg:4.0rem;/*40px*/
+--esp-al:8.0rem;/*80px*/
+
+/* OTROS ELEMENTOS */
+--radio:0.6rem;/*6px*/
+--sombra-1:0.2rem 0.6rem rgba(0,0,0,.06);/*Apenas separado*/
+--sombra-2:0.2rem 0.6rem rgba(0,0,0,.10);/*Tarjeta*/
+--sombra-3:8rem 2.0rem rgba(0,0,0,.16);/*Elementos elevados*/
+--transicion:0.25 ease;
+--ancho-max:120rem/*1200px*/
+}
+
+/*RESET Y BASE TIPOGRÀFICA*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;/*La lìnea màs importante del reset, porque sin ella,si a una caja le damos un width 300px y ademàs un padding de 20px, y ademàs un border de 2px la caja en realidad mide 300+20+20+2+2= }44px. con esta linea el relleno y el border se descuentan hacia adentro. */
+}
+
+/* LA BASE DEL TAMAÑO. la tècnica del 62.5x100 */
+html{
+font-size:62.5%; /*Por omisiòn el navegador utiliza 16px para el tamaño ease*/
+/*El 62.5 de 16px es exactamente 10*//*tiene que ver con accesibilidad tambièn, y la parte responsive*/
+
+scroll-behavior: smooth/*Saltos suaves al usar navegaciòn con anclas*/;
+}
+
+body{
+    font-size: 16px;/*1.6rem. Si no se agrega esta lìnea el texto no toma el valor de los 16px base y quedarìa un texto casi ilegible.*/
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+    color: var(--color-tinta);
+    background-color: var(--color-fondo);
+
+}
+/*CORREGIR*/
+/* JERARQUÌA DE TITULOS */
+h1,h2,h3{
+    font-family: var(--fuente-titulo);
+    line-height: 1.2px;
+    color: var(--color-marca);
+
+}
+
+
+h1{  font-size: 0.4rem;}
+h2{ font-size: 0.4rem;}
+h3{ font-size: 0.4rem;}
+
+
+p{
+    margin-bottom: auto;
+}
+
+a{
+    color:var(--color-acento);
+    text-decoration: none;
+}
+
+img{
+    max-width: auto;
+    height: auto;
+    display: block;
+}
+
+/* CONTENEDORES Y SECCIONES */
+
+.seccion{
+    max-width: var(--ancho-max);/*Toma todo el ancho disponible*/
+    margin-left: auto;
+    margin-right: auto;/*Centra el bloque, repartiendo el espacio sobrante por igual*/
+    padding: var(--esp--md) var(--esp-al);/*el primero afecta arriba y abajo, y largo afecta izquierda y derecha*/
+
+}
+
+.seccion-alterna{
+    background-color: var(--color-fondo-alt);
+    max-width: none;/*Se anula el ancho màximo para que el fondo ocupe todo el ancho de la pantalla sin importar el ancho dela pantalla */
+
+}
