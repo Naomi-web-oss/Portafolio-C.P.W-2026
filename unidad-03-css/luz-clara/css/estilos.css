@@ -35,10 +35,24 @@ Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
 
 /* OTROS ELEMENTOS */
 --radio:0.6rem;/*6px*/
---sombra-1:0.2rem 0.6rem rgba(0,0,0,.06);/**/
+--sombra-1:0.2rem 0.6rem rgba(0,0,0,.06);/*Apenas separado*/
 --sombra-2:0.2rem 0.6rem rgba(0,0,0,.10);/*Tarjeta*/
---sombra-3:8rem 2.0rem rgba(0,0,0,.16);/*elementos elevados*/
+--sombra-3:8rem 2.0rem rgba(0,0,0,.16);/*Elementos elevados*/
 --transicion:0.25 ease;
 --ancho-max:120rem/*1200px*/
 }
 
+/*RESET Y BASE TIPOGRÀFICA*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;/*La lìnea màs importante del reset, porque sin ella,si a una caja le damos un width 300px y ademàs un padding de 20px, y ademàs un border de 2px la caja en realidad mide 300+20+20+2+2= }44px. con esta linea el relleno y el border se descuentan hacia adentro. */
+}
+
+/* LA BASE DEL TAMAÑO. la tècnica del 62.5x100 */
+html{
+font-size:62.5%; /*Por omisiòn el navegador utiliza 16px para el tamaño ease*/
+/*El 62.5 de 16px es exactamente 10*//*tiene que ver con accesibilidad tambièn, y la parte responsive*/
+
+scroll-behavior: smooth/*Saltos suaves al usar navegaciòn con anclas*/;
+}
