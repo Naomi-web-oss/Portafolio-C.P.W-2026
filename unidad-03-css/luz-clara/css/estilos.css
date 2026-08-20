@@ -1,0 +1,44 @@
+/* ESTUDIO LUZ CLARA */
+
+/* VARIABLES Y CONFUGIRACIÒN
+Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
+
+/* Se declaran dentro :root; que representa el elemento html es el de todos */
+
+
+:root{
+    /* Paleta de colores */
+     --color-tinta:#1a1a1a;/*texto principal */
+     --color-scale:#cbcbcb;/*Texto secundario*/
+     --color-marca:#2c3e50;/*El color del estudio*/
+     --color-acento:#c87941;/*El color de los botones*/
+     --color-acento-osc:#a45f2e; /*Terracota oscuro*/
+     --color-fondo: #fafaf8;/*Color de fondo*/
+     --color-fondo-alt:#f0cee9; /*Para alterar fondo secciones */
+     --color-linea: #dddad3; /*Bordes y separadores*/
+     --color-blanco:#ffffff; /*blanco y puro*/
+
+
+
+/* TIPOGRAFIA */
+
+--fuente-titulo:Georgia,hervetica,san serif;
+--fuente-texto:'Segoe ul',Arial, san serif;
+
+
+/* ESPACIADO CONVERSIÒN 1 REM = 10 PÌXELS*/
+--es-sm:0.8rem;
+--es-cm:
+--es--md:24px;
+--es-lg:4.0rem;
+--es-al:8rem;
+
+/* OTROS ELEMENTOS */
+--radio:0.6rem;/*6px*/
+--sombra-1:0.2rem 0.6rem rgba(0,0,0,.06);/**/
+--sombra-2:0.2rem 0.6rem rgba(0,0,0,.10);/*Tarjeta*/
+--sombra-3:8rem 2.0rem rgba(0,0,0,.16);/*elementos elevados*/
+--transicion:0.25 ease;
+--ancho-max:120rem/*1200px*/
+}
+
