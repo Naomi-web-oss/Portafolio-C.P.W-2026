@@ -211,5 +211,38 @@ img{
 
 .menu-encale.activo{/*Dos clases del mismo elemento. Significa que el elemento que tenga las dos clases es la marca de la página ctual o activa.*/
     color: var(--color-acento);
+}
 
+/*PORTADA*/
+/*Aquí va la imagen de fondo*/
+.portada{
+    background-image: url('../recursos/portada.webp');
+    background-color: var(--color-marca);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;/*La imagen si fuera más pequeña que el contenedor no se repetiría*/
+    min-height: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--esp-md);
+    text-align: center;
+}
+
+.portada-caja{
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: var(--esp-lg);
+    border-radius: var(--radio);
+    max-width: 70rem;
+}
+
+.portada-titulo{
+    color: var(--color-blanco);
+    margin-bottom: var(--esp-sm);
+}
+
+.portada-bajada{
+    color: var(--color-blanco);
+    font-size: 1.8rem;
+    margin-bottom: var(--esp--md);
 }
