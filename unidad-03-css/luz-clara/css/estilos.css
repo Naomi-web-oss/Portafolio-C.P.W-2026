@@ -9,12 +9,12 @@ Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
 :root{
     /* Paleta de colores */
      --color-tinta:#1a1a1a;/*texto principal */
-     --color-scale:#cbcbcb;/*Texto secundario*/
-     --color-marca:#2c3e50;/*El color del estudio*/
-     --color-acento:#c87941;/*El color de los botones*/
+     --color-suave:#6b6b6b;/*Texto secundario,pies de foto*/
+     --color-marca:#2c3e50;/*El azul del estudio*/
+     --color-acento:#c87941;/*Terracota de los botones*/
      --color-acento-osc:#a45f2e; /*Terracota oscuro*/
-     --color-fondo: #fafaf8;/*Color de fondo*/
-     --color-fondo-alt:#f0cee9; /*Para alterar fondo secciones */
+     --color-fondo: #fafaf8;/*Blanco roto, no blanco puro*/
+     --color-fondo-alt:#f0eee9; /*Para alterar fondo secciones */
      --color-linea: #dddad3; /*Bordes y separadores*/
      --color-blanco:#ffffff; /*blanco y puro*/
 
@@ -23,7 +23,8 @@ Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
 /* TIPOGRAFIA */
 
 --fuente-titulo:Georgia,'Times New Roman',san serif;
---fuente-texto:'Segoe ul',Arial, sans-serif;
+--fuente-texto:'Segoe uI',Arial, sans-serif;
+--fuente-titulo:Georgia, 'Times New Roman', serif;
 
 
 /* ESPACIADO CONVERSIÒN 1 REM = 10 PÌXELS*/
@@ -288,3 +289,58 @@ img{
     padding-top: var(--esp-sm);
     border-top: 0.1rem solid var(--color-linea);
 }
+
+/* GALERIA . CSS GRID  */
+/* GRID dos dimensiones, cuadrícula de filas y columnas */
+
+.rejilla.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    /*Se lee de adentro hacia afuera: minmax(28rem, 1fr) cada columna mida 280px y como máximo una fracción del espacio disponible. repeat(auto-fit) crea tantas columnas como quepan con esa medida. JUNTAS: pone todas la columnas que quepan en 280px y reparte el espacio sobrante entre ellas. Responsive si media querias*/
+    gap: var(--esp-sm);
+}
+
+.galeria-pieza{
+    position: relative;/*No mueve la figura, solo la declara como un punto de referencia para los hijos*/
+    overflow: hidden;/*Recorta lo que sobre sale de los límites de la figura. Permique que img se agrande al pasar el cursor sin invadir a las figuras vecinas.*/
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-1);
+
+}
+
+.pieza-destacada{
+    grid-column: span 2;/*Ocupa dos columnas*/
+    grid-row: span 2;/*Y dos filas*/
+}
+
+.galeria-pieza img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*Recorta la imagen por el centro para no deformarla.*/
+    transition: transform 0.4s ease, filter 0.4s ease;
+    filter: grayscale(60%);/*El filtro quita el 60% del color de las imágenes.*/
+}
+
+.galeria-pieza:hover img{
+    transform: scale(1.6);
+    filter: grayscale(0);/*Recupera el color*/
+}
+
+.galeria-pie{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;/*Absolute se ubica con respecto al ancestro más cercano con posición relative*/
+    background-color: rgba(0, 0, 0, 0.65);
+    color: var(--color-blanco);
+    padding: var(--esp--xs);
+    font-size: 1.3rem;
+    text-align: center;
+    transform: translateY(100%);/*Lo desplaza hacia abajo el 100% de su altura*/
+    transition: transform var(--transicion);
+}
+
+.galeria-pieza:hover .galeria-pie{
+    transform: translateY(0);/*El pie de foto vuelve a su posición deslizandose desde abajo*/
+}
+
