@@ -22,7 +22,7 @@ Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
 
 /* TIPOGRAFIA */
 
---fuente-titulo:Georgia,Hervetica,san serif;
+--fuente-titulo:Georgia,'Times New Roman',san serif;
 --fuente-texto:'Segoe ul',Arial, sans-serif;
 
 
@@ -30,8 +30,8 @@ Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
 --esp-sm:0.8rem;/*8px*/
 --esp-csm:1.6rem;/*16px*/
 --esp--md:2.4px;/*24px*/
---esp-lg:4.0rem;/*40px*/
---esp-xl:8.0rem;/*80px*/
+--esp-lg:4rem;/*40px*/
+--esp-xl:8rem;/*80px*/
 
 /* OTROS ELEMENTOS */
 --radio:0.6rem;/*6px*/
@@ -152,4 +152,64 @@ img{
 .subtitulo{
     margin-top: var(--esp--md);
     margin-bottom: var(--esp-xs);
+}
+
+/*CABECERA Y MENÚ*/
+
+.cabecera{
+    display: flex;/*Activa FLEXBOX*/
+    justify-content: space-between;/*COLOCANDO EL PRIMER ELEMENTO AL INICIO Y EL SEGUNDO AL FINAL*/
+    align-items: center;
+    padding: var(--esp-sm) var(--esp-md);
+    border-bottom: 0.1rem solid var(--color-linea);
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:var(--esp--xs);
+    color: var(--color-marca);
+}
+
+.logo:hover .logo-icono{
+    transform: rotate(-8deg); /*Cuando el cursor este sobre el logo se vuelve -8 grados.*/
+}
+
+.logo-texto{
+    font-family: var(--fuente-titulo);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    gap: var(--esp-sm);
+    list-style: none;
+}
+
+.menu-enlace{
+    display: inline-block; /*Esta línea permite aplicar relleno vertical*/
+    padding: var(--esp-xs) var(--esp-sm);
+    color: var(--color-tinta);
+    font-weight: 600;
+    border-radius: var(--radio);
+    transition: background-color var(--transicion), color var(--transicion);
+}
+
+.menu-enlace:hover{
+    background-color: var(--color-fondo-alt);
+    color: var(--color-marca);
+}
+
+.menu-enlace:focus{
+    outline: 0.2rem solid var(--color-acento);
+    outline-offset: 0.2rem; /*Se activa con la tecla tab al llegar al enlace. Permite navegar el sitio con el teclado*/
+}
+
+.menu-encale.activo{/*Dos clases del mismo elemento. Significa que el elemento que tenga las dos clases es la marca de la página ctual o activa.*/
+    color: var(--color-acento);
+
 }
