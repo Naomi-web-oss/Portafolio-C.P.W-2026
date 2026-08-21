@@ -411,10 +411,3 @@ img{
     width: 100%;
 }
 
-.imagen-pie{
-    margin-top: var(--esp-xs);
-    font-size: 1.3rem;
-    color: var(--color-suave);
-    text-align: center;
-    font-style: italic;
-}
