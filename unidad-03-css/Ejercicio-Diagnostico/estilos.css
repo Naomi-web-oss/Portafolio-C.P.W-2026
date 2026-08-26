@@ -69,7 +69,7 @@ a {
 
 /* 4 · CONTENEDORES */
 .seccion {
-  width: 110%; /*REM - %*/
+  max-width: 110%; /*REM - %* CAMBIAMOS WIDTH- A MAX-WIDTH (PARA QUE OCUPE TODO EL ANCHO Y POR ADAPTACIÓN DE PANTALLA*/
   margin-left: auto;
   margin-right: auto;
   padding: var(--esp-lg) var(--esp-md);
@@ -99,7 +99,7 @@ a {
   z-index: 100;
 }
 
-.marca h1 { font-size: 2.6rem; }
+/*.marca h1 { font-size: 2.6rem; }/*UN SOLO H1 POR PÁGINA*/
 
 .lema {
   font-size: 1.4rem;
@@ -114,17 +114,17 @@ a {
   list-style: none;
 }
 
-menu-enlace {
+.menu-enlace {/*AUSENCIA DE .*/
   padding: 1rem 1.6rem;
   color: var(--tinta);
   font-weight: 600;
   border-radius: var(--radio);
+  transition: background-color var(--transicion); 
 }
 
-.menu-enlace:hover {
+.menu-enlace:hover {/*TRANSITION NUNCA DEBE IR EN HOVER*/
   background-color: var(--crema-alt);
   color: var(--madera);
-  transition: background-color var(--transicion); 
 }
 
 .menu-enlace.activo {
@@ -132,13 +132,14 @@ menu-enlace {
 }
 
 
-/* 6 · TARJETAS */
+/* 6 · TARJETAS */ /*AÑADIMOS FLEX-WRAP:WRAP*/
 .fila-tarjetas {
   display: flex;
   gap: var(--esp-md);
+  flex-wrap: wrap;
 }
 
-.tarjeta {
+.tarjeta {/*AÑADIMOS-JUSTIFY-CONTENT.*/
   flex: 1 1 28rem;
   background-color: var(--blanco);
   padding: var(--esp-md);
@@ -147,6 +148,7 @@ menu-enlace {
   box-shadow: var(--sombra);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .tarjeta-titulo {
@@ -167,8 +169,11 @@ menu-enlace {
 
 
 /* 7 · TABLA */
+
 .tabla {
   width: 100%;
+  border-collapse: collapse;/*Agregamos border-collapse*/
+  border: 1.2rem solid var(--linea);
 }
 
 .tabla-titulo {
@@ -202,6 +207,9 @@ menu-enlace {
   font-size: 1.4rem;
 }
 
+table tbody tr:hover{
+  transition: background-color var(--transicion);
+}
 
 /* 8 · CITA */
 .cita {
@@ -214,14 +222,15 @@ menu-enlace {
   box-shadow: var(--sombra);
 }
 
-.cita::before {
-  position: absolute;
+.cita::before {/*Position:absolute- Position: relative*/
+  position: relative;
   top: -1rem;
   left: 1.5rem;
   font-family: Georgia, serif;
   font-size: 7rem;
   color: var(--miel);
   opacity: 0.25;
+  content: '\201C';
 }
 
 .cita-texto {
@@ -239,8 +248,9 @@ menu-enlace {
 
 
 /* 9 · FORMULARIO */
-.formulario {
-  max-width: 68rem;
+.formulario {/*Agregamos font-family:inherit, max-height:70rem*/
+  max-height: 70rem;
+  font-family: inherit;
 }
 
 .grupo {
@@ -278,8 +288,8 @@ menu-enlace {
   background-color: var(--crema);
 }
 
-.campo-entrada:focus {
-  outline: none;
+.campo-entrada:focus {/*Border*/
+  border: 0.1rem solid var(--linea);
 }
 
 .opcion {
@@ -320,11 +330,12 @@ menu-enlace {
   color: var(--tinta);
 }
 
-.fila-botones {
+.fila-botones {/*Margin-top*/
   display: flex;
   gap: var(--esp-sm);
   justify-content: flex-end;
   margin-bottom: 0;
+  margin-top: 1.6rem;
 }
 
 
