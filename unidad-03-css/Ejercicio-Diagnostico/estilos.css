@@ -12,10 +12,6 @@
   box-sizing: border-box;
 }
 
-html{
-  font-size: 62.5%;/*AUSENCIA DE HTML-FONT-SIZE*/
-}
-
 /* 2 · VARIABLES */
 :root {
   --miel:      #B8860B;
@@ -114,12 +110,13 @@ a {
   list-style: none;
 }
 
-.menu-enlace {/*AUSENCIA DE .*/
+.menu-enlace {/*AUSENCIA DE .*//*Agregamos color a transition*//*Agregamos fon-size para enlaces*/
   padding: 1rem 1.6rem;
   color: var(--tinta);
   font-weight: 600;
   border-radius: var(--radio);
-  transition: background-color var(--transicion); 
+  transition: background-color var(--transicion), color var(--transicion); 
+  font-size: 1.6rem;
 }
 
 .menu-enlace:hover {/*TRANSITION NUNCA DEBE IR EN HOVER*/
@@ -138,7 +135,6 @@ a {
   gap: var(--esp-md);
   flex-wrap: wrap;
 }
-
 .tarjeta {/*AÑADIMOS-JUSTIFY-CONTENT.*/
   flex: 1 1 28rem;
   background-color: var(--blanco);
@@ -223,11 +219,11 @@ table tbody tr:hover{
 }
 
 .cita::before {/*Position:absolute- Position: relative*/
-  position: relative;
+  position: relative;/*Cambio font-size-7rem a font-size-4rem*/
   top: -1rem;
   left: 1.5rem;
   font-family: Georgia, serif;
-  font-size: 7rem;
+  font-size: 4rem;
   color: var(--miel);
   opacity: 0.25;
   content: '\201C';

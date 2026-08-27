@@ -23,14 +23,14 @@ Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
 /* TIPOGRAFIA */
 
 --fuente-titulo:Georgia,'Times New Roman',serif;
---fuente-texto:'Segoe uI',Arial, sans-serif;
+--fuente-texto:'Segoe UI',Arial, sans-serif;
 --fuente-titulo:Georgia, 'Times New Roman', serif;
 
 
 /* ESPACIADO CONVERSIÒN 1 REM = 10 PÌXELS*/
 --esp-xs:0.8rem;/*8px*/
 --esp-sm:1.6rem;/*16px*/
---esp--md:2.4px;/*24px*/
+--esp--md:2.4rem;/*24px*/
 --esp-lg:4rem;/*40px*/
 --esp-xl:8rem;/*80px*/
 
@@ -39,7 +39,7 @@ Una VARIABLE.guarda un valor con un nombre para probar reutilizarla */
 --sombra-1:0 0.2rem 0, 0.6rem rgba(0,0,0, 06);/*Apenas separado*/
 --sombra-2:0 0.4rem 0, 1.2rem rgba(0,0,0, 10);/*Tarjeta*/
 --sombra-3:0 0.2rem 0, 0.6rem rgba(0,0,0,.16);/*Elementos elevados*/
---transicion:0.25 ease;
+--transicion:0.25s ease;
 --ancho-max: 120rem;/*1200px*/
 }
 
