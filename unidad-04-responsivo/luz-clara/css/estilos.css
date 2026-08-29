@@ -95,13 +95,124 @@ img{
     display: block;
 }
 
+table{width: 100%;
+border-collapse: collapse;
+}
+
+caption{
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+th,td{
+    padding: 1.2rem;
+    border-bottom: .1rem solid #DDD;
+}
+
+thead th{
+    background: var(--color-marca);
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+tbody tr:nth-child(even){
+    background: #F5F7FA;
+}
+
+tbody tr:hover{
+    background: #E3EEF9;
+}
+
+tfoot td{
+    background: #F5F7FA;
+    font-style: italic;
+    border-top: .2rem solid var(--color-marca);
+}
+
+fieldset{
+    border: .1rem solid #DDD;
+    border-radius: .6rem;
+    padding: .2rem;
+    margin-bottom: 2rem;
+    background: #FFF;
+}
+
+Legend{
+    padding: 0.8rem;
+    font-weight: 700;
+    color: var(--color-marca);
+}
+
+label{
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select,textarea{
+    width: 100%;
+    padding: 1rem 1.4rem;
+    border: .1rem solid #DDD;
+    border-radius: .6rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+}
+
+input:focus,select:focus,textarea:focus{
+    outline: none;
+    border-color: var(--color-acento);
+    box-shadow: 0 0 0 .3rem rgba(197, 90, 17, .18);
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    width: auto;
+    accent-color:var(--color-acento);
+    cursor: pointer;
+}
+
+.boton{
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    border: none;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--color-acento);
+    color:#FFF;
+    transition: background-color .25s, ease transform .25s ease;
+}
+
+.boton:hover{
+    background:var(--color-acento);
+    transform:translateY(-2rem);
+}
+
+.boton:active{
+    transform: translateY(0);
+}
+
+.boton:focus{
+    outline: .2rem solid var(--color-marca);
+    outline-offset: .2rem;
+}
+
+
 /* CONTENEDORES Y SECCIONES */
 
 .seccion{
     max-width: var(--ancho-max);/*Toma todo el ancho disponible*/
     margin-left: auto;
     margin-right: auto;/*Centra el bloque, repartiendo el espacio sobrante por igual*/
-    padding: var(--esp--xl) var(--esp-md);/*el primero afecta arriba y abajo, y largo afecta izquierda y derecha*/
+    padding: var(--esp-xl) var(--esp-md);/*el primero afecta arriba y abajo, y largo afecta izquierda y derecha*/
 
 }
 
@@ -118,7 +229,7 @@ img{
 }
 
 .seccion-titulo{
-    margin-bottom: var(--esp-sm);
+    margin-bottom: var(--esp-lg);
     text-align: center;
 }
 
@@ -133,19 +244,22 @@ img{
 }
 
 .pagina-encabezado{
-    max-width: var(--ancho-max);
-    margin: 0 auto;
+    
     padding: var(--esp-xl) var(--esp-md) var(--esp-lg);
     /*Tres valores: arriba, los lados y abajo.*/
     text-align: center;
+    background-color: var(--color-marca);
+  
 }
 
 .pagina-titulo{
-    margin-bottom: var(--esp-xs);
+     margin-bottom: var(--esp-sm);
+     color:var(--color-blanco);
 }
 
 .pagina-bajada {
-    color: var(--color-suave);
+
+    color: var(--color-blanco);
     font-size: 1.8rem;
 }
 
@@ -255,8 +369,9 @@ img{
     flex-wrap: wrap;
 }
 
+
 .tarjeta{
-     flex: 1 1 30rem;/*1 flex-grow: si sobra espacio crece. 1 flex-shrink si falta espacio se encoge. 30rem flex-basis: parte de un tamaño base 300px*/
+     flex: 1 1 28rem;/*1 flex-grow: si sobra espacio crece. 1 flex-shrink si falta espacio se encoge. 30rem flex-basis: parte de un tamaño base 300px*/
      background-color: var(--color-blanco);
      padding: var(--esp-md);
      border-radius: var(--radio);
@@ -278,6 +393,7 @@ img{
 .tarjeta-texto{
     color: var(--color-suave);
     flex-grow: 1;/*Hace que el párrafo absorba todo el espacio vertical sobrante de la tarjeta*/
+    margin-bottom: 2rem;
 }
 
 .tarjeta-precio{
@@ -376,7 +492,6 @@ img{
     color: var(--color-acento);
     font-weight: 600;
     font-size: 1.4rem;
-    text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-bottom: var(--esp-xs);
  }
@@ -397,6 +512,7 @@ img{
 
  .columna-texto{
     flex: 1 1 32rem;
+    margin-top: 2rem;
  }
 
  .columna-imagen{
@@ -410,3 +526,45 @@ img{
     width: 100%;
 }
 
+.volver.arriba{
+    margin-left: 3rem;
+}
+
+.pie {
+  background-color: var(--color-marca);
+  color: var(--color-blanco);
+  padding: var(--esp-lg) var(--esp-md) var(--esp-md);
+  margin-top: var(--esp-lg);
+}
+
+.pie-columnas {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: var(--esp-md);
+}
+
+.pie-titulo {
+  color: var(--color-blanco);
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  margin-left: 12rem;
+}
+
+.pie-texto,
+.pie-datos {
+  font-size: 1.4rem;
+  font-style: normal;
+  opacity: 0.88;
+  margin-left: 12rem;
+}
+
+.pie-creditos {
+  margin-top: var(--esp-md);
+  padding-top: var(--esp-sm);
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.22);
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0.7;
+  margin-bottom: 0;
+  margin-right: 7rem;
+}
