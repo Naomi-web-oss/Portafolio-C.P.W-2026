@@ -411,3 +411,110 @@ img{
     width: 100%;
 }
 
+/*La base para mòdulo*/
+
+.menu{
+    display: flex ;
+    flex-direction: column;
+    gap: ;
+    list-style: none;
+    width: 100%;
+}
+
+.menu-enlace{
+    display: block;
+    text-align: center;
+    padding: var(--esp--md);
+    font-weight: 600;
+    border-radius: var(--radio);
+   
+}
+
+@media (min-width: 768px){
+    .menu-boton{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width:768px){
+    main p {max-width: 65ch;}
+.tabla th,
+.tabla td{
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
+}
+ }   
+
+@media (min-width:768px){
+    main p {max-width: 65ch;}
+
+
+
+.menu a{
+    border-bottom: none;
+    display: inline-block;
+}
+}
+
+.logo-texto{
+    font-family: var(--fuente-titulo);
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.navegacion{
+    display: flex;
+    align-items: center;
+}
+
+.menu-control{
+    position: absolute;
+    opacity: 0;
+    width: 0.1rem;
+    height: 0.1rem;
+}
+
+.menu-boton{
+    display: flex;
+    align-items: center;
+    gap: var(--esp--xs);
+    cursor: pointer;
+    padding: var(--esp-xs); 
+}
+
+.menu-barra{
+    display: block;
+    width: 2.4rem;
+    height: 0.3rem;
+    background-color: var(--color-marca);
+    border-radius: var(--radio);
+}
+
+
+.menu-barra + .menu-barra{
+    margin-top: 0.4rem;
+}
+
+
+.menu-texto{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.menu-control:checked .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-boton:focus-within{
+    outline: 0.2rem solid var(--color-acento);
+    outline-offset: 0.2rem;
+}
+
