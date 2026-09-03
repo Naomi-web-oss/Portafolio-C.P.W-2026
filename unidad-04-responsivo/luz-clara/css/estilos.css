@@ -568,3 +568,144 @@ input[type="checkbox"]{
   margin-bottom: 0;
   margin-right: 7rem;
 }
+
+.menu{
+    display: flex ;
+    flex-direction: column;
+    gap: ;
+    list-style: none;
+    width: 100%;
+}
+
+.menu-enlace{
+    display: block;
+    text-align: center;
+    padding: var(--esp--md);
+    font-weight: 600;
+    border-radius: var(--radio);
+   
+}
+
+
+@media (min-width:768px){
+    main p {max-width: 65ch;}
+.tabla th,
+.tabla td{
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
+}
+ }   
+
+@media (min-width:768px){
+    main p {max-width: 65ch;}
+
+.menu a{
+    border-bottom: none;
+    display: inline-block;
+}
+}
+
+@media (min-width: 768px){
+    .menu-boton{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 500px){
+    .portada{
+        min-height: 100vh;
+        padding: var(--esp--md);
+    }
+
+    .portada-titulo{
+        font-size: 2.4rem;
+    }
+
+    .portada-bajada{
+        font-size: 1.5rem;
+    }
+}
+
+@media print{
+/*QUITAR LO QUE NO SIRVE AL IMPRIMIR*/
+.cabecera{display: none;}
+.menu-boton{display: none;}
+.pie{display: none;}
+.boton{display: none;}
+.volver-arriba{display: none;}
+.fila-etiquetas{display: none;}
+body{
+ background-color: var(--color-blanco);
+}
+
+.table .tarjeta  figure{
+    page-break-inside:avoid;
+}
+
+h1,h2,h3{
+    page-break-after:avoid;
+}
+
+/*MOSTRAR ENLACES*/
+main a[href^="http"]::after{
+    content: "(" attr(href)")";
+    font-size: 9pt;
+    color:#555;
+}
+}
+
+.navegacion{
+    display: flex;
+    align-items: center;
+}
+
+.menu-control{
+    position: absolute;
+    opacity: 0;
+    width: 0.1rem;
+    height: 0.1rem;
+}
+
+.menu-boton{
+    display: flex;
+    align-items: center;
+    gap: var(--esp--xs);
+    cursor: pointer;
+    padding: var(--esp-xs); 
+}
+
+.menu-barra{
+    display: block;
+    width: 2.4rem;
+    height: 0.3rem;
+    background-color: var(--color-marca);
+    border-radius: var(--radio);
+}
+
+
+.menu-barra + .menu-barra{
+    margin-top: 0.4rem;
+}
+
+
+.menu-texto{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.menu-control:checked .menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-boton:focus-within{
+    outline: 0.2rem solid var(--color-acento);
+    outline-offset: 0.2rem;
+}
+
