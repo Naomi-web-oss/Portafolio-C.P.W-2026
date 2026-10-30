@@ -1,0 +1,413 @@
+
+:root {
+
+  /*  COLORES  */
+  --color-sandia:#FF6866;   
+  --color-nosotros:#E6384D;   
+  --color-pera:#C0F759; 
+  --color-fondo:#acaaa8;
+
+  /*  TIPOGRAFÍA  */
+  --fuente-titulo: Arial, Helvetica, sans-serif;
+  --fuente-texto:  Arial, Helvetica, sans-serif;
+  /* OJO: La LISTA DE RESPALDO: si la primera fuente no está disponible,
+     el navegador prueba la siguiente. La última SIEMPRE debe ser una
+     familia genérica (serif, sans-serif, monospace), porque esa
+     siempre existe.                                                  */
+
+  /*  ESPACIADO  */
+  --esp-xs: 0.8rem;    /*  8px */
+  --esp-sm: 1.6rem;    /* 16px */
+  --esp-md: 2.4rem;    /* 24px */
+  --esp-lg: 4.0rem;    /* 40px */
+  --esp-xl: 8.0rem;    /* 80px */
+  /* Usar una escala fija en vez de números al azar hace que todos los
+     espacios del sitio guarden relación entre sí. Es lo que hace que
+     una página se vea "ordenada" aunque no se sepa explicar por qué. */
+
+  /*  OTROS  */
+  --radio:   0.6rem;                            /*  6px */
+  --sombra-1: 0 0.2rem 0.6rem rgba(0,0,0,.06);  /* apenas separado */
+  --sombra-2: 0 0.4rem 1.2rem rgba(0,0,0,.10);  /* una tarjeta */
+  --sombra-3: 0 0.8rem 2.0rem rgba(0,0,0,.16);  /* elemento elevado */
+  --transicion: 0.25s ease;
+  --ancho-max: 120rem;   
+  
+  }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3rem;  
+
+}
+
+nav {
+    display: flex;
+}
+
+#reposteria-enlace-nav:hover{
+    color: #56091f;
+}
+
+#peras-enlace-nav:hover{
+    color: var(--color-pera);
+}
+
+#enlaces-navegación{
+   list-style-type: none;
+   display: flex;
+    gap: 1rem;
+    font-family: var(--fuente-texto);
+    font-size: 25px;
+}
+
+h2{
+    
+    color: white;
+}
+
+body{
+    background-color: #56091f;
+}
+
+img{
+    width: 100%;
+    height: 35rem;
+}
+
+#imagen-reposteria-banner{
+    width: 100%;
+    height: 22rem;
+}
+
+nav a{
+    flex-wrap: wrap;
+}
+
+
+#reposteria-lista-contenedor{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      width: 100%;
+      padding: 6rem;
+      justify-content: center;
+      width: 100%;
+      margin-top: 2rem;
+    
+}
+
+#reposteria{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    height: 31rem;
+    font-size: var(--fuente-texto);
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+#reposteria-titulo{
+    margin: 0 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    background-color:#db5275 ;
+    color: white;
+    border-radius: 1rem;
+    width: 16rem;
+    height: 2.5rem;
+    text-align: center;
+    transition: var(--transicion);
+}
+
+#reposteria-titulo:hover{
+    color: #c93253ca;
+    background-color:#ffdde5; 
+}
+
+#reposteria-lista-lista-contenedor{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#lista-lista-reposteria{
+    display: flex;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    font-family: var(--fuente-texto);
+    font-size: 25px;
+    padding-top: 1rem;
+}
+
+#lista-lista-reposteria-1{
+    display: flex;
+    background-color:#f9aabb ;
+    color: black;
+    width: 19%;
+    height: 16rem;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: var(--sombra-2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    border: 1px solid #db5275;
+}
+
+#lista-lista-titulo-reposteria-1{
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    right: 1rem;
+    box-shadow: var(--sombra-2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #c93253;
+    position: absoluta;
+}
+
+
+#lista-lista-reposteria-1:hover{
+    box-shadow: var(--sombra-2);
+    transform: scale(1.1);
+}
+
+#lista-lista-reposteria-2{
+    display: flex;
+    background-color:#f9aabb;
+    width: 19%;
+    color: black;
+    height: 16rem;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: var(--sombra-2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #db5275;
+
+}
+
+#lista-lista-reposteria-2:hover{
+    box-shadow: var(--sombra-2);
+    transform: scale(1.1);
+}
+
+#lista-lista-reposteria-3{
+    display: flex;
+    background-color:#f9aabb;
+    color: black;
+    width: 19%;
+    height: 16rem;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: var(--sombra-2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #db5275;
+}
+
+#lista-lista-reposteria-3:hover{
+   box-shadow: var(--sombra-2);
+   transform: scale(1.1);
+}
+
+#lista-lista-reposteria-4{
+    display: flex;
+    background-color:#f9aabb;
+    width: 19%;
+    height: 16rem;
+    padding: 24px;
+    box-sizing: border-box;
+    box-shadow: var(--sombra-2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    color: black;
+    border-radius: 1rem;
+    border: 1px solid #db5275;
+}
+
+#lista-lista-reposteria-4:hover{
+   box-shadow: var(--sombra-2);
+   transform: scale(1.1);
+}
+
+#dibujo-contenedor{
+    width: 100%;
+    background-color: #C0F759;
+    height: 1rem;
+    width: 1rem;
+}
+
+#dibujo{
+    bottom:50rem;
+    left: 1rem;
+    height: 6rem;
+    width: 20rem;
+    position: absolute;
+}
+
+#contenedor-tarjetas-reposteria{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    height: 39rem;
+}
+
+
+#tartas1-imagen1{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 30rem;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+#tartas2-imagen2{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 30rem;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+#tartas3-imagen3{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 30rem;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+#tartas4-imagen4{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 36rem;
+    justify-content:space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+
+#imagenes-bloques{
+    background-color: #f9aabb;
+    height: 35rem;
+
+}
+
+.peras{
+    display: block;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20rem;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    font-size: var(--fuente-texto);
+    font-size: 20px;
+}
+
+#peras-titulo{
+   background-color: var(--color-pera);
+    color: white; 
+}
+
+.sandias{
+    display: block;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20rem;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    font-size: var(--fuente-texto);
+    font-size: 20px;
+
+}
+
+#sandias-titulo{
+   background-color: var(--color-sandia);
+    color: white; 
+}
+
+#vacio{
+    background-color: white;
+    height: 30rem;
+}
+
+.pie{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 10rem;
+    font-size:1rem;
+    flex-direction: row;
+    font-family:'Segoe UI', Arial, sans-serif;
+    color: white;
+    background-color: #56091f;
+    justify-content: center;
+    padding: 10rem;
+}
+
+.pie-titulo{
+    margin: 16px;
+}
+
+.pie-texto{
+    font-style: normal;
+    margin: 8px;
+}
+
+.pie-enlace{
+    font-style: normal;
+}
+
+#pie-peras{
+    background-color: var(--color-pera);
+}
+
+#pie-sandias{
+    background-color: var(--color-sandia);
+}
